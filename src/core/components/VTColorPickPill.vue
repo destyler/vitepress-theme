@@ -32,7 +32,7 @@ const { isDark } = useData()
         </TooltipTrigger>
         <TooltipPortal>
           <TooltipContent :side-offset="5" class="h-6 px-2 py-1 text-xs font-normal truncate relative bg-white dark:bg-dark text-dark dark:text-light rounded rounded-md shadow ring-1 ring-gray-200 dark:ring-gray-800">
-            {{ props.color.label }}
+            {{ props.color.label }},
           </TooltipContent>
         </TooltipPortal>
       </TooltipRoot>

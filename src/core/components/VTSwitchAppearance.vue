@@ -52,7 +52,6 @@ function toggleDark() {
     class="head-btn"
     @click="toggleDark"
   >
-    <Icon v-if="isDark" name="carbon:moon" class="icones" />
-    <Icon v-else name="carbon:sun" class="icones" />
+    <Icon :name="isDark ? 'carbon:moon' : 'carbon:sun'" class="icones" />
   </Button>
 </template>

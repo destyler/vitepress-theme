@@ -38,7 +38,7 @@ export const themes = [
     label: 'Zinc',
     activeColor: {
       light: '240 5.9% 10%',
-      dark: '240 5.2% 33.9%',
+      dark: '0 0% 98%',
     },
     cssVars: {
       light: {
