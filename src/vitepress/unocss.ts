@@ -21,6 +21,11 @@ export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1] as const
 export function presetDestyler(options: PresetOptions = {}, globals = true): Preset<Theme> {
   return {
     name: 'unocss-preset-destyler',
+    shortcuts: [
+      {
+        icones: 'w-5 h-5',
+      },
+    ],
     preflights: [
       {
         getCSS: () => `
