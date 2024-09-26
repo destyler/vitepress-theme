@@ -23,7 +23,7 @@ const props = defineProps<{
   </div>
 </template>
 
-<style scoped>
+<style>
 .vp-nav-bar {
   --at-apply:
     relative

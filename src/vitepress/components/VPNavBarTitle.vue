@@ -20,7 +20,7 @@ const { config } = useConfig()
   </Link>
 </template>
 
-<style scoped>
+<style>
 .vp-nav-bar-title {
   --at-apply:
     flex

@@ -70,7 +70,7 @@ function handleSelectColor(color: any) {
   </ClientOnly>
 </template>
 
-<style scoped>
+<style>
 .vp-color-pick-trigger{
   --at-apply: focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 p-1.5 text-[var(--header-primary)] hover:text-[var(--header-primary)] hover:bg-[var(--header-accent-foreground)] focus-visible:ring-inset focus-visible:ring-2 inline-flex items-center bg-transparent;
 }
