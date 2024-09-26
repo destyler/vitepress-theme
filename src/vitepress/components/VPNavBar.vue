@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import VPNavBarMenu from './VPNavBarMenu.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
 import VPNavBarTitle from './VPNavBarTitle.vue'
 
@@ -17,6 +18,7 @@ const props = defineProps<{
       </VPNavBarTitle>
       <div class="content">
         <VPNavBarSearch class="search" />
+        <VPNavBarMenu class="menu" />
         <slot />
       </div>
     </div>
