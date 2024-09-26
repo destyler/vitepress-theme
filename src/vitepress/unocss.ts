@@ -1,13 +1,14 @@
 import type { Preset } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
 import type { PresetOptions } from './colors/types'
-
 import {
   presetAttributify,
   presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+
+import { presetAnimations } from 'unocss-preset-animations'
 import { generateCSSVars, generateGlobalStyles } from './colors/generate'
 import { themes } from './colors/themes'
 
@@ -118,6 +119,7 @@ export function presetDestyler(options: PresetOptions = {}, globals = true): Pre
     presets: [
       presetUno(),
       presetAttributify(),
+      presetAnimations(),
     ],
     transformers: [
       transformerVariantGroup(),

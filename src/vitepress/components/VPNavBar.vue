@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import VPNavBarSearch from './VPNavBarSearch.vue'
+import VPNavBarTitle from './VPNavBarTitle.vue'
+
 const props = defineProps<{
   isScreenOpen: boolean
 }>()
@@ -6,13 +9,52 @@ const props = defineProps<{
 
 <template>
   <div class="vp-nav-bar">
-    <slot />
+    <div class="container">
+      <VPNavBarTitle>
+        <template #navbar-title>
+          <slot name="navbar-title" />
+        </template>
+      </VPNavBarTitle>
+      <div class="content">
+        <VPNavBarSearch class="search" />
+        <slot />
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .vp-nav-bar {
-  --at-apply: relative border-b border-solid border-border bg-background whitespace-nowrap pl-6 pr-3 transition-[border-color] duration-[0.5s,background-color] delay-[0.5s] md:pl-8 md:pr-3 xl:px-8;
-  height: var(--vt-nav-height);
+  --at-apply:
+    relative
+    border-b
+    border-solid
+    border-border
+    bg-background
+    whitespace-nowrap
+    h-[var(--vt-nav-height)]
+    pl-6
+    pr-3
+    md:pl-8
+    md:pr-3
+    xl:px-8;
+    transition: border-color 0.5s, background-color 0.5s;
+}
+
+.container {
+  --at-apply:
+    flex
+    justify-between
+    max-w-[var(--vp-screen-max-width)]
+    mx-auto
+    my-0;
+}
+
+.content {
+  --at-apply:
+    flex
+    justify-end
+    items-center
+    grow-1;
 }
 </style>

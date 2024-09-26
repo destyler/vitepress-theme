@@ -3,10 +3,11 @@ import type {
   MenuBadgeItem,
   MenuItemChildWithChildren,
   MenuItemWithLink,
-  SocialLink
+  SocialLink,
 } from '../core'
 
 export interface Config {
+  logo?: string | { light: string, dark: string }
   /**
    * The appearance option to enable/disable light/dark mode.
    *

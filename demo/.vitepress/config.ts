@@ -29,10 +29,16 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   lang: 'en-US',
-  title: 'Vue.js',
+  title: 'Destyler',
+
   description: 'Vue.js - The Progressive JavaScript Framework',
 
   themeConfig: {
+
+    logo: {
+      light: '/light-logo.svg',
+      dark: '/dark-logo.svg',
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vue' },
@@ -345,43 +351,6 @@ export default defineConfigWithTheme<ThemeConfig>({
         },
       ],
     },
-
-    // // For i18n translation messages
-    // i18n: {
-    //   search: 'Search',
-    //   menu: 'Menu',
-    //   toc: 'On this page',
-    //   returnToTop: 'Return to top',
-    //   appearance: 'Appearance',
-    //   previous: 'Previous',
-    //   next: 'Next',
-    //   pageNotFound: 'Page Not Found',
-    //   deadLinkFound: {
-    //     before: 'You found a dead link: ',
-    //     after: ''
-    //   },
-    //   deadLinkReport: {
-    //     before: 'Please ',
-    //     content: 'let us know',
-    //     after: ' so we can fix it.'
-    //   },
-    //   footerLicense: {
-    //     before: 'Released under the ',
-    //     after: '.'
-    //   }
-
-    //   // aria labels
-    //   ariaAnnouncer: {
-    //     before: '',
-    //     after: ' has loaded'
-    //   },
-    //   ariaDarkMode: 'Toggle Dark Mode',
-    //   ariaSkip: 'Skip to content',
-    //   ariaTOC: 'Table of Contents for current page',
-    //   ariaMainNav: 'Main Navigation',
-    //   ariaMobileNav: 'Mobile Navigation',
-    //   ariaSidebarNav: 'Sidebar Navigation',
-    // }
 
     // For locale links
     localeLinks: [

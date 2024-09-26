@@ -2,6 +2,7 @@
 import { provide } from 'vue'
 import { useNav } from '../composables/nav'
 import { useSidebar } from '../composables/sidebar'
+import VPNavBar from './VPNavBar.vue'
 
 const { isScreenOpen, closeScreen, toggleScreen } = useNav()
 const { hasSidebar } = useSidebar()
@@ -11,13 +12,15 @@ provide('close-screen', closeScreen)
 
 <template>
   <header class="vp-nav nav-bar" :class="{ stick: !hasSidebar }">
-    <slot />
+    <VPNavBar :is-screen-open="isScreenOpen">
+      <slot />
+    </VPNavBar>
   </header>
 </template>
 
 <style scoped>
 .vp-nav {
-  --at-apply: relative top-0 left-0 z-20;
+  --at-apply: relative top-0 left-0;
 }
 
 @media (min-width: 960px) {

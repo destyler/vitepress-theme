@@ -4,9 +4,7 @@
   --header-primary-foreground: rgba(250, 250, 250, 1);
   --header-accent: rgba(24, 24, 27, 1);
   --header-accent-foreground: rgba(244, 244, 245, 1);
-  --header-height: 4rem;
 }
-
 
 html.dark {
   --header-primary: rgba(250, 250, 250, 1.0);
@@ -14,5 +12,10 @@ html.dark {
   --header-primary-foreground: rgba(24, 24, 27, 1);
   --header-accent: rgba(250, 250, 250, 1);
   --header-accent-foreground: rgba(39, 39, 42, 1);
-  --header-height: 4rem;
+}
+
+:root {
+  --vt-nav-height: 4rem;
+  /* Screen Size */
+  --vp-screen-max-width: 1376px;
 }
