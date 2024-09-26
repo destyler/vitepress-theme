@@ -131,7 +131,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         {
           text: 'Essentials',
           items: [
-            { text: 'Introduction', link: '/guide/introduction' },
+            { text: 'Introduction', link: '/guide/introduction', icon: 'carbon:ai-status' },
             { text: 'Installation', link: '/guide/installation' },
             {
               text: 'Application & Component Instances',

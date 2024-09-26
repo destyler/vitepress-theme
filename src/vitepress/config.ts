@@ -172,6 +172,7 @@ export interface MultiSidebarConfig {
 export interface SidebarGroup {
   text: string
   badge?: MenuBadgeItem
+  icon?: string
   items: MenuItemWithLink[]
 }
 

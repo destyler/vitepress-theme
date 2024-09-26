@@ -134,7 +134,7 @@ watch(openStatus, (value) => {
                       @click="handleGo(sub.link)"
                     >
                       <div class="doc-search-combobox-item-item">
-                        <Icon :name="sub.rel ?? 'clarity:file-line'" class="doc-search-combobox-item-icon" />
+                        <Icon :name="sub.icon ?? 'clarity:file-line'" class="doc-search-combobox-item-icon" />
                         <div class="doc-search-combobox-item-desc">
                           <span class="doc-search-combobox-item-text">{{ sub.text }}</span>
                         </div>
