@@ -3,7 +3,7 @@
     rounded-md min-w-192px border
     transition-[background-color] duration-0.5s
     overflow-auto p-2 border-solid
-    border-transparent flex flex-col bg-background;
+    border-transparent flex flex-col bg-popover;
 }
 
 

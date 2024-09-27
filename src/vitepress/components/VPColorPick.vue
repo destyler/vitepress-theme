@@ -8,7 +8,7 @@ import {
   PopoverTrigger,
 } from 'destyler'
 import { computed, nextTick, onMounted, watch } from 'vue'
-import { VTColorPickPill } from '../../core'
+import { VTThemeAppearance, VTThemeColorPickPill, VTThemeRadiusPill } from '../../core'
 import { themes } from '../colors/themes'
 
 const colors = computed(() => {
@@ -24,6 +24,7 @@ const colors = computed(() => {
 })
 
 const primary = useStorage('destyler-vitepress-theme-color', 'zinc')
+const radius = useStorage('destyler-vitepress-theme-radius', 0.5)
 
 onMounted(() => {
   nextTick(() => {
@@ -34,12 +35,24 @@ onMounted(() => {
     }, {
       immediate: true,
     })
+
+    watch(radius, (value) => {
+      document.body.style.setProperty('--radius', `${value}rem`)
+    }, {
+      immediate: true,
+    })
   })
 })
 
 function handleSelectColor(color: any) {
   primary.value = color.value
 }
+
+function handleSetRadius(r: number) {
+  radius.value = r
+}
+
+const RADII = [0, 0.25, 0.5, 0.75, 1]
 </script>
 
 <template>
@@ -55,14 +68,45 @@ function handleSelectColor(color: any) {
           as-child
           class="vp-color-pick-content"
         >
-          <div class="vp-color-pick-box">
-            <VTColorPickPill
-              v-for="color in colors"
-              :key="color.value"
-              :color="color"
-              :selected="primary"
-              @select="handleSelectColor"
-            />
+          <div class="p-4">
+            <div class="grid space-y-1">
+              <h1 class="text-md text-foreground font-semibold">
+                Customize
+              </h1>
+              <p class="text-xs text-muted-foreground">
+                Pick a style and color for your components.
+              </p>
+            </div>
+            <div class="space-y-1.5 pt-6">
+              <Label for="color" class="text-xs"> Color </Label>
+              <div class="grid grid-cols-3 gap-2 py-1.5">
+                <VTThemeColorPickPill
+                  v-for="color in colors"
+                  :key="color.value"
+                  :color="color"
+                  :selected="primary"
+                  @select="handleSelectColor"
+                />
+              </div>
+            </div>
+            <div class="space-y-1.5 pt-6">
+              <Label for="radius" class="text-xs"> Radius </Label>
+              <div class="grid grid-cols-5 gap-2 py-1.5">
+                <VTThemeRadiusPill
+                  v-for="r in RADII"
+                  :key="r"
+                  :radius="r"
+                  :selected="radius"
+                  @select="handleSetRadius"
+                />
+              </div>
+            </div>
+            <div class="space-y-1.5 pt-6">
+              <Label for="theme" class="text-xs"> Theme </Label>
+              <div class="flex space-x-2 py-1.5">
+                <VTThemeAppearance />
+              </div>
+            </div>
           </div>
         </PopoverContent>
       </PopoverPortal>
@@ -76,10 +120,16 @@ function handleSelectColor(color: any) {
 }
 
 .vp-color-pick-content {
-  --at-apply: w-[156px] rounded-md bg-background border border-solid border-border py-2 px-4;
+  --at-apply:
+    w-96 rounded-md border border-solid border-border p-4 shadow-md
+    z-50 bg-popover text-popover-foreground outline-none
+    data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0
+    data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95
+    data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2
+    data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2;
 }
 
 .vp-color-pick-box{
-  --at-apply: grid grid-cols-5 gap-2px;
+  --at-apply: grid grid-cols-3 gap-2px;
 }
 </style>
