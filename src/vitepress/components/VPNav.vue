@@ -4,7 +4,7 @@ import { useNav } from '../composables/nav'
 import { useSidebar } from '../composables/sidebar'
 import VPNavBar from './VPNavBar.vue'
 
-const { isScreenOpen, closeScreen, toggleScreen } = useNav()
+const { isScreenOpen, closeScreen } = useNav()
 const { hasSidebar } = useSidebar()
 
 provide('close-screen', closeScreen)

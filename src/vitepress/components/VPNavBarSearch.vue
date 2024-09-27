@@ -334,7 +334,9 @@ watch(openStatus, (value) => {
 }
 
 .doc-search-combobox-viewport {
-  --at-apply: relative flex-1 h-[calc(28rem-var(--vt-nav-height))] overflow-y-scroll border-t border-border;
+  --at-apply:
+  relative flex-1 h-dvh sm:h-[calc(28rem-var(--vt-nav-height))]
+  overflow-y-scroll border-t border-border;
 }
 
 .doc-search-combobox-empty {
