@@ -2,6 +2,7 @@
 import VPColorPick from './VPColorPick.vue'
 import VPNavBarMenu from './VPNavBarMenu.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
+import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
 import VPNavBarTitle from './VPNavBarTitle.vue'
 
 const props = defineProps<{
@@ -21,6 +22,7 @@ const props = defineProps<{
         <VPNavBarSearch class="search" />
         <VPNavBarMenu class="menu" />
         <VPColorPick />
+        <VPNavBarSocialLinks />
         <slot />
       </div>
     </div>

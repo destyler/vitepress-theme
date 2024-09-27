@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button, Icon } from 'destyler'
+import { Button } from 'destyler'
 import { useData } from 'vitepress'
 import { computed } from 'vue'
 
@@ -28,13 +28,7 @@ const isSelected = computed(() => props.color.value === props.selected)
     :class="[isSelected ? 'border-foreground border-2' : 'border-input']"
     @click="emits('select', props.color)"
   >
-    <span class="h-4 w-4 rounded-full flex items-center justify-center" :style="{ backgroundColor: `hsl(${isDark ? props.color.hex.dark : props.color.hex.light})` }">
-      <Icon
-        v-if="isSelected"
-        name="carbon:checkmark"
-        class="h-3 w-3 text-light dark:text-dark"
-      />
-    </span>
+    <span class="h-4 w-4 rounded-full flex items-center justify-center" :style="{ backgroundColor: `hsl(${isDark ? props.color.hex.dark : props.color.hex.light})` }" />
     <span class="ml-2 text-xs capitalize">{{ props.color.label }}</span>
   </Button>
 </template>

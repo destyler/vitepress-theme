@@ -1,0 +1,30 @@
+.vt-social-link {
+  --at-apply:
+    text-foreground hover:text-foreground/80
+    flex justify-center items-center;
+  transition: color .5s;
+}
+
+.vt-social-link.is-small {
+  --at-apply: w-36px h-36px;
+}
+
+.vt-social-link.is-small .vt-social-link-icon {
+  --at-apply: w-20px h-20px;
+}
+
+.vt-social-link.is-medium {
+  --at-apply: w-48px h-48px;
+}
+
+.vt-social-link.is-medium .vt-social-link-icon {
+  --at-apply: w-24px h-24px;
+}
+
+.vt-social-link:hover {
+  transition: color .25s;
+}
+
+.vt-social-link-icon {
+  fill: currentColor;
+}
