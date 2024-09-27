@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { Ref } from 'vue'
 import type { NavItemWithChildren } from '../config'
 import { useElementBounding } from '@vueuse/core'
 import {
@@ -6,21 +7,25 @@ import {
   NavigationContent,
   NavigationTrigger,
 } from 'destyler'
-import { inject, nextTick, useTemplateRef } from 'vue'
+import { inject, useTemplateRef } from 'vue'
+import { VTMenu } from '../../core'
 
 const props = defineProps<{
   item: NavItemWithChildren
 }>()
 
-const { handleSetTriggerX } = inject('vp-nav-bar-menu-trigger-x')
+const { handleSetTriggerX } = inject('vp-nav-bar-menu-trigger-x') as {
+  handleSetTriggerX: (label: string, x: Ref<number>) => void
+  triggerXList: { label: string, x: Ref<number> }[]
+}
 
 const triggerRef = useTemplateRef('trigger')
 const { x } = useElementBounding(triggerRef)
-handleSetTriggerX(props.item.text, x)
+handleSetTriggerX(props.item.text!, x)
 </script>
 
 <template>
-  <NavigationTrigger ref="trigger" class="vp-nav-bar-menu-button">
+  <NavigationTrigger ref="trigger" class="vp-nav-bar-menu-button group">
     {{ props.item.text }}
     <Icon name="carbon:chevron-down" class="vp-nav-bar-menu-text-icon" />
   </NavigationTrigger>
@@ -37,9 +42,7 @@ handleSetTriggerX(props.item.text, x)
     data-[motion=to-start]:slide-out-to-left-52
     md:absolute md:w-auto "
   >
-    <ul class="grid w-[200px] gap-3 p-4 md:w-[200px] md:grid-cols-2 lg:w-[200px] ">
-      {{ props.item }}
-    </ul>
+    <VTMenu :items="props.item.items" />
   </NavigationContent>
 </template>
 
@@ -53,6 +56,8 @@ handleSetTriggerX(props.item.text, x)
 
 .vp-nav-bar-menu-text-icon {
   --at-apply:
-    ml-1 w-14px h-14px fill-current;
+    ml-1 w-14px h-14px fill-current
+    transition duration-200
+    group-data-[state=open]:rotate-180;
 }
 </style>

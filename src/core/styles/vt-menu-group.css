@@ -1,0 +1,6 @@
+.vt-menu-group-title {
+  --at-apply:
+    leading-7 text-10px font-semibold uppercase
+    transition-color duration-0.25s px-18px
+    text-muted-foreground/80;
+}

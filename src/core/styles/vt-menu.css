@@ -1,0 +1,47 @@
+.vt-menu {
+  --at-apply:
+    rounded-md min-w-192px border
+    transition-[background-color] duration-0.5s
+    overflow-auto p-2 border-solid
+    border-transparent flex flex-col bg-background;
+}
+
+
+.vt-menu-items {
+  --at-apply: transition-[border-color] duration-[0.5s];
+}
+
+.vt-menu .vt-menu-group {
+  --at-apply: pb-3;
+}
+
+.vt-menu .vt-menu-group + .vt-menu-group {
+  --at-apply:
+    pt-11px pb-3 border-t border-solid
+    border-t-border;
+}
+
+.vt-menu .vt-menu-group:last-child {
+  --at-apply: pb-0;
+}
+
+.vt-menu .vt-menu-group + .vt-menu-item-item {
+  --at-apply:
+    pt-11px pb-3 border-t border-solid
+    border-t-border;
+}
+
+.vt-menu .vt-menu-item {
+  --at-apply: whitespace-nowrap px-4;
+}
+
+.vt-menu-label {
+  --at-apply:
+    grow leading-7 text-xs font-medium
+    transition-[color] duration-[0.5s]
+    text-muted-foreground;
+}
+
+.vt-menu-action {
+  --at-apply: pl-6;
+}

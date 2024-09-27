@@ -1,0 +1,5 @@
+.vt-link-icon {
+  --at-apply:
+    inline-block w-11px h-11px ml-1 mt-[-0.5]
+    transition-fill duration-0.25s;
+}

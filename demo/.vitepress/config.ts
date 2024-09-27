@@ -53,7 +53,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         items: [
           {
             items: [
-              { text: 'Guide', link: '/guide/introduction' },
+              { text: 'Guide', link: '/guide/introduction', badge: { text: 'New', type: 'success' } },
               { text: 'Installation', link: '/guide/installation' },
             ],
           },

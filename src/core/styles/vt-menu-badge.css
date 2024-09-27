@@ -1,0 +1,30 @@
+.vt-menu-badge {
+  --at-apply:
+    inline-block text-10px not-italic font-semibold
+    leading-none tracking-0.2px ml-1.5 px-1 py-3.5px
+    rounded-md;
+  background: var(--vt-color-blue);
+  color: var(--vt-color-white-soft);
+}
+
+.vt-menu-badge.secondary {
+  background: var(--vt-color-gray-light);
+  color: var(--vt-color-blue-dark);
+}
+
+.vt-menu-badge.success {
+  background: var(--vt-color-green);
+}
+
+.vt-menu-badge.info {
+  background: var(--vt-color-indigo-soft);
+}
+
+.vt-menu-badge.warning {
+  background: var(--vt-color-yellow-light);
+  color: var(--vt-color-black-soft);
+}
+
+.vt-menu-badge.danger {
+  background: var(--vt-color-red);
+}

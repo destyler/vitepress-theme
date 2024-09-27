@@ -17,9 +17,9 @@ const menuModel = ref('')
 
 const action = ref<{ label: string, x: number }>()
 
-const triggerXList = ref<{ label: string, x: Ref<number> }[]>([])
+const triggerXList: Ref<{ label: string, x: number }[]> = ref([])
 
-function handleSetTriggerX(label: string, x: Ref<number>) {
+function handleSetTriggerX(label: string, x: number) {
   triggerXList.value.push({ label, x })
 }
 
@@ -64,7 +64,7 @@ watch(menuModel, (value) => {
         </template>
       </NavigationItem>
     </NavigationList>
-    <div :style="{ '--left': `${action ? action.x - min : 0}px` }" class="absolute left-[--left] top-full flex justify-center">
+    <div :style="{ '--left': `${action ? action.x - min : 0}px` }" class="absolute left-[--left] top-4/5 flex justify-center">
       <NavigationViewport
         class="
         origin-top-center relative mt-1.5
