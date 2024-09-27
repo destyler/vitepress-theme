@@ -42,7 +42,7 @@ handleSetTriggerX(props.item.text!, x)
   --at-apply:
     flex items-center h-[var(--vt-nav-height)]
     px-3 transition-[color] duration-[0.5s]
-    text-popover-foreground hover:text-muted-foreground;
+    text-foreground hover:text-foreground/60;
 }
 
 .vp-nav-bar-menu-text-icon {

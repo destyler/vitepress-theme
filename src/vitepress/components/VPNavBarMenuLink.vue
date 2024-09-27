@@ -20,6 +20,6 @@ const props = defineProps<{
   --at-apply:
     flex items-center h-[var(--vt-nav-height)]
     px-3 transition-[color] duration-[0.5s] cursor-pointer
-    text-popover-foreground hover:text-primary;
+    text-foreground hover:text-foreground/60;
 }
 </style>

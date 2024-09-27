@@ -4,7 +4,11 @@ import VPNav from './VPNav.vue'
 
 <template>
   <div class="mx-auto w-full h-full">
-    <VPNav />
+    <VPNav>
+      <template #navbar-title>
+        <slot name="navbar-title" />
+      </template>
+    </VPNav>
     homepage
   </div>
 </template>
