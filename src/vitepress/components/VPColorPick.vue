@@ -59,7 +59,9 @@ const RADII = [0, 0.25, 0.5, 0.75, 1]
   <ClientOnly>
     <PopoverRoot>
       <PopoverTrigger class="vp-color-pick-trigger">
-        <Icon name="carbon:color-palette" class="icones" />
+        <div class="vt-locales-btn-icon-container">
+          <Icon name="carbon:color-palette" class="icones" />
+        </div>
       </PopoverTrigger>
       <PopoverPortal>
         <PopoverContent
@@ -116,7 +118,12 @@ const RADII = [0, 0.25, 0.5, 0.75, 1]
 
 <style>
 .vp-color-pick-trigger{
-  --at-apply: focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 p-1.5 text-[var(--header-primary)] hover:text-[var(--header-primary)] hover:bg-[var(--header-accent-foreground)] focus-visible:ring-inset focus-visible:ring-2 inline-flex items-center bg-transparent;
+  --at-apply:
+    flex items-center px-3
+    h-[var(--vt-nav-height)]
+    text-foreground
+    hover:text-primary
+    transition-[color] duration-[0.5s];
 }
 
 .vp-color-pick-content {
@@ -131,5 +138,22 @@ const RADII = [0, 0.25, 0.5, 0.75, 1]
 
 .vp-color-pick-box{
   --at-apply: grid grid-cols-3 gap-2px;
+}
+
+.vt-locales-btn-icon-container {
+  --at-apply: flex items-center cursor-pointer;
+}
+
+.vt-locales-btn-icon-container::before,
+.vt-locales-btn-icon-container::after {
+  --at-apply: w-px h-6 content-[""] bg-foreground/40;
+}
+
+.vt-locales-btn-icon-container::before {
+  --at-apply: mr-3;
+}
+
+.vt-locales-btn-icon-container::after {
+  --at-apply: ml-3;
 }
 </style>
