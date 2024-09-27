@@ -48,35 +48,20 @@ watch(menuModel, (value) => {
 </script>
 
 <template>
-  <NavigationRoot v-model="menuModel" class="relative z-10 flex max-w-max flex-1 items-center justify-center">
+  <NavigationRoot v-model="menuModel" class="vp-nav-bar-menu-root">
     <NavigationList class="vp-nav-bar-menu">
       <NavigationItem
         v-for="item in config.nav"
         :key="item.text"
         :value="item.text"
-        class="relative"
+        class="vp-nav-bar-menu-item"
       >
-        <template v-if="'link' in item">
-          <VPNavBarMenuLink :item="item" />
-        </template>
-        <template v-else>
-          <VPNavBarMenuGroup :item="item" />
-        </template>
+        <VPNavBarMenuLink v-if="'link' in item" :item="item" />
+        <VPNavBarMenuGroup v-else :item="item" />
       </NavigationItem>
     </NavigationList>
-    <div :style="{ '--left': `${action ? action.x - min : 0}px` }" class="absolute left-[--left] top-4/5 flex justify-center">
-      <NavigationViewport
-        class="
-        origin-top-center relative mt-1.5
-        h-[var(--destyler-navigation-viewport-height)]
-        w-full overflow-hidden rounded-md border
-        bg-popover text-popover-foreground shadow-lg
-        data-[state=open]:animate-in
-        data-[state=closed]:animate-out
-        data-[state=closed]:zoom-out-95
-        data-[state=open]:zoom-in-90
-        md:w-[var(--destyler-navigation-viewport-width)]"
-      />
+    <div :style="{ '--left': `${action ? action.x - min : 0}px` }" class="vp-nav-bar-menu-viewport-box">
+      <NavigationViewport class="vp-nav-bar-menu-viewport" />
     </div>
   </NavigationRoot>
 </template>
@@ -84,5 +69,30 @@ watch(menuModel, (value) => {
 <style>
 .vp-nav-bar-menu {
   --at-apply: hidden md:flex;
+}
+
+.vp-nav-bar-menu-root {
+  --at-apply: relative z-10 flex max-w-max flex-1 items-center justify-center;
+}
+
+.vp-nav-bar-menu-item {
+  --at-apply: relative;
+}
+
+.vp-nav-bar-menu-viewport-box {
+  --at-apply: absolute left-[--left] top-4/5 flex justify-center;
+}
+
+.vp-nav-bar-menu-viewport {
+  --at-apply:
+    origin-top-center relative mt-1.5
+    h-[var(--destyler-navigation-viewport-height)]
+    w-full overflow-hidden rounded-md border
+    bg-popover text-popover-foreground shadow-lg
+    data-[state=open]:animate-in
+    data-[state=closed]:animate-out
+    data-[state=closed]:zoom-out-95
+    data-[state=open]:zoom-in-90
+    md:w-[var(--destyler-navigation-viewport-width)];
 }
 </style>

@@ -91,6 +91,10 @@ export default defineConfigWithTheme<ThemeConfig>({
       {
         text: 'Community',
         activeMatch: `^/community/`,
+        badge: {
+          text: 'New',
+          type: 'primary',
+        },
         items: [
           {
             items: [
