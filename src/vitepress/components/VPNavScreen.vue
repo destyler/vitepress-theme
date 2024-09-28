@@ -2,6 +2,7 @@
 import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock'
 import { ref } from 'vue'
 import VPNavScreenMenu from './VPNavScreenMenu.vue'
+import VPNavScreenSocialLinks from './VPNavScreenSocialLinks.vue'
 
 defineProps<{
   open: boolean
@@ -27,6 +28,7 @@ function unlockBodyScroll() {
     <div v-if="open" ref="screen" class="vp-nav-screen">
       <div class="container">
         <VPNavScreenMenu />
+        <VPNavScreenSocialLinks class="mt-4" />
       </div>
     </div>
   </transition>
@@ -69,20 +71,18 @@ function unlockBodyScroll() {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 24px 0 96px;
-  max-width: 288px;
+  --at-apply: flex flex-col max-w-288px mx-auto pt-6 pb-24;
 }
 
 .menu+.appearance {
-  margin-top: 24px;
+  --at-apply: mt-6;
 }
 
 .menu+.social-links {
-  margin-top: 16px;
+  --at-apply: mt-4;
 }
 
 .appearance+.social-links {
-  margin-top: 12px;
+  --at-apply: mt-3;
 }
 </style>

@@ -8,20 +8,8 @@ const { config } = useConfig()
 <template>
   <VTSocialLinks
     v-if="config.socialLinks"
-    class="vp-nav-bar-social-links"
-    size="small"
+    class="VPNavScreenSocialLinks"
+    size="medium"
     :links="config.socialLinks"
   />
 </template>
-
-<style scoped>
-.vp-nav-bar-social-links {
-  --at-apply: hidden mr-[-10px];
-}
-
-@media (min-width: 1280px) {
-  .vp-nav-bar-social-links {
-    --at-apply: flex;
-  }
-}
-</style>

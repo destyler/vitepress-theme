@@ -15,18 +15,17 @@ const hasContent = computed(() => {
 </script>
 
 <template>
-  <VTHamburger v-if="hasContent" class="VPNavBarHamburger" :active="active" />
+  <VTHamburger v-if="hasContent" class="vp-nav-bar-hamburger" :active="active" />
 </template>
 
 <style scoped>
-.VPNavBarHamburger {
-  width: 40px;
-  height: var(--vt-nav-height);
+.vp-nav-bar-hamburger {
+  --at-apply: w-40px h-[--vt-nav-height];
 }
 
 @media (min-width: 768px) {
-  .VPNavBarHamburger {
-    display: none;
+  .vp-nav-bar-hamburger {
+    --at-apply: hidden;
   }
 }
 </style>
