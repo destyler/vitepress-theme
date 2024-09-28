@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<{
 <template>
   <ClientOnly>
     <PopoverRoot>
-      <PopoverTrigger class="vt-flyout-trigger">
+      <PopoverTrigger class="vt-flyout-trigger" v-bind="$attrs">
         <slot name="vt-flyout-trigger" />
       </PopoverTrigger>
       <PopoverPortal>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import VPColorPick from './VPColorPick.vue'
 import VPNavBarExtra from './VPNavBarExtra.vue'
+import VPNavBarHamburger from './VPNavBarHamburger.vue'
 import VPNavBarMenu from './VPNavBarMenu.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
 import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
@@ -9,6 +10,8 @@ import VPNavBarTitle from './VPNavBarTitle.vue'
 const props = defineProps<{
   isScreenOpen: boolean
 }>()
+
+const emits = defineEmits(['toggle-screen'])
 </script>
 
 <template>
@@ -25,7 +28,11 @@ const props = defineProps<{
         <VPColorPick />
         <VPNavBarSocialLinks />
         <VPNavBarExtra />
-        <slot />
+        <VPNavBarHamburger
+          class="hamburger"
+          :active="props.isScreenOpen"
+          @click="emits('toggle-screen')"
+        />
       </div>
     </div>
   </div>
