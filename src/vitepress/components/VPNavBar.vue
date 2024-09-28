@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import VPColorPick from './VPColorPick.vue'
+import VPNavBarExtra from './VPNavBarExtra.vue'
 import VPNavBarMenu from './VPNavBarMenu.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
 import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
@@ -23,6 +24,7 @@ const props = defineProps<{
         <VPNavBarMenu class="menu" />
         <VPColorPick />
         <VPNavBarSocialLinks />
+        <VPNavBarExtra />
         <slot />
       </div>
     </div>

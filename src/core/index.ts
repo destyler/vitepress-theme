@@ -1,3 +1,4 @@
+export { default as VTFlyout } from './components/VTFlyout.vue'
 export { default as VTLink } from './components/VTLink.vue'
 export { default as VTMenu } from './components/VTMenu.vue'
 export { default as VTMenuBadge } from './components/VTMenuBadge.vue'
