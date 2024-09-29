@@ -11,7 +11,7 @@ const { config } = useConfig()
 </script>
 
 <template>
-  <div v-if="hasSidebar" class="VPLocalNav">
+  <div v-if="hasSidebar" class="vp-local-nav">
     <Button
       class="menu"
       :aria-expanded="props.open"
@@ -25,7 +25,7 @@ const { config } = useConfig()
 </template>
 
 <style scoped>
-.VPLocalNav {
+.vp-local-nav {
   --at-apply:
     sticky left-0 z-[--vp-z-index-local-nav] flex w-full
     justify-between border-b border-b-border bg-background;
@@ -34,7 +34,7 @@ const { config } = useConfig()
 }
 
 @media (min-width: 960px) {
-  .VPLocalNav {
+  .vp-local-nav {
     --at-apply: hidden;
   }
 }
