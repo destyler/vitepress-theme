@@ -18,4 +18,8 @@ html.dark {
   --vt-nav-height: 4rem;
   /* Screen Size */
   --vp-screen-max-width: 1376px;
+  --vp-z-index-sidebar: 50;
+
+  --vp-sidebar-width-mobile: 320px;
+  --vp-sidebar-width-small: 280px;
 }

@@ -16,7 +16,7 @@ const emits = defineEmits(['toggle-screen'])
 
 <template>
   <div class="vp-nav-bar">
-    <div class="container">
+    <div class="containersing">
       <VPNavBarTitle>
         <template #navbar-title>
           <slot name="navbar-title" />
@@ -56,7 +56,7 @@ const emits = defineEmits(['toggle-screen'])
     transition: border-color 0.5s, background-color 0.5s;
 }
 
-.container {
+.containersing {
   --at-apply:
     flex
     justify-between
