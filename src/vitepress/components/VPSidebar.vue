@@ -44,7 +44,7 @@ watchPostEffect(async () => {
 <style scoped>
 .vp-sidebar {
   --at-apply:
-    fixed top-0 bottom-0 left-0 z-[--vp-z-index-sidebar]
+    fixed top-0 bottom-0 left-0 z-[--vp-z-index-sidebar] bg-background
     w-[calc(100vw_-_64px)] pb-24 px-8 max-w-[--vp-sidebar-width-mobile]
     op-0 overflow-x-hidden overflow-y-auto -translate-x-full scrollbar-hide;
   transition: background-color 0.5s, opacity 0.5s, transform 0.3s ease;
