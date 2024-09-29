@@ -24,7 +24,7 @@ provide('close-screen', closeScreen)
 
 <style>
 .vp-nav {
-  --at-apply: relative top-0 left-0;
+  --at-apply: relative top-0 left-0 bg-background z-10;
 }
 
 @media (min-width: 960px) {

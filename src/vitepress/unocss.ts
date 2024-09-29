@@ -64,14 +64,6 @@ export function presetDestyler(options: PresetOptions = {}, globals = true): Pre
           animation: 'collapsible-up 0.2s ease-out',
         },
       ],
-      [/^scrollbar-hide$/, ([_]) => {
-        return `.scrollbar-hide{scrollbar-width:none}
-  .scrollbar-hide::-webkit-scrollbar{display:none}`
-      }],
-      [/^scrollbar-default$/, ([_]) => {
-        return `.scrollbar-default{scrollbar-width:auto}
-  .scrollbar-default::-webkit-scrollbar{display:block}`
-      }],
     ],
     theme: {
       colors: {

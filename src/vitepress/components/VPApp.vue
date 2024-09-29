@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { VTBackdrop } from '../../core'
 import { useSidebar } from '../composables/sidebar'
+import VPContent from './VPContent.vue'
 import VPLocalNav from './VPLocalNav.vue'
 import VPNav from './VPNav.vue'
 import VPSidebar from './VPSidebar.vue'
@@ -29,6 +30,6 @@ const {
         <slot name="sidebar-bottom" />
       </template>
     </VPSidebar>
-    homepage
+    <VPContent/>
   </div>
 </template>

@@ -24,7 +24,7 @@ watchPostEffect(async () => {
   <aside
     v-if="hasSidebar"
     ref="navEl"
-    class="vp-sidebar"
+    class="vp-sidebar scrollbar-hide"
     :class="{ open }"
     @click.stop
   >
@@ -46,18 +46,18 @@ watchPostEffect(async () => {
   --at-apply:
     fixed top-0 bottom-0 left-0 z-[--vp-z-index-sidebar] bg-background
     w-[calc(100vw_-_64px)] pb-24 px-8 max-w-[--vp-sidebar-width-mobile]
-    op-0 overflow-x-hidden overflow-y-auto -translate-x-full scrollbar-hide;
+    op-0 overflow-x-hidden overflow-y-auto -translate-x-full;
   transition: background-color 0.5s, opacity 0.5s, transform 0.3s ease;
 }
 
 .vp-sidebar-nav {
-  --at-apply: pt-24px outline-0 scrollbar-hide;
+  --at-apply: pt-24px outline-0 ;
 }
 
 @media (min-width: 960px) {
   .vp-sidebar {
     --at-apply:
-      top-[--vt-nav-height] z-1 w-[--vp-sidebar-width-small] scrollbar-hide
+      top-[--vt-nav-height] z-1 w-[--vp-sidebar-width-small]
       max-w-full op-100 visible shadow-none translate-x-0 transition-[border-color]
       duration-[0.5s,background-color] delay-[0.5s];
   }

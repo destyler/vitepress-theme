@@ -28,7 +28,7 @@ function hasActiveLink() {
     </Label>
     <div class="mt-3 h-auto">
       <div class="text-sm text-inherit dark:text-inherit">
-        <nav class="border-l border-gray-200 dark:border-dark-800 scrollbar-hide">
+        <nav class="border-l border-gray-200 dark:border-dark-800">
           <VPSidebarLink
             v-for="item in props.items"
             :key="item.link"
