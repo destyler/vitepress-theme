@@ -28,6 +28,7 @@ watchPostEffect(updateActive)
     :class="{
       'link-hover': active,
     }"
+    @click="closeSideBar"
   >
     <span class="text-sm/6 truncate">
       {{ props.item.text }}

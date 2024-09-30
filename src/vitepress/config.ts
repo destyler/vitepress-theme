@@ -180,6 +180,7 @@ export interface i18nConfig {
   search?: string
   menu?: string
   toc?: string
+  community?: string
   returnToTop?: string
   appearance?: string
   previous?: string

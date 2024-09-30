@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { provide } from 'vue'
 import { VTBackdrop } from '../../core'
 import { useSidebar } from '../composables/sidebar'
 import VPContent from './VPContent.vue'
@@ -11,6 +12,8 @@ const {
   open: openSidebar,
   close: closeSidebar,
 } = useSidebar()
+
+provide('close-sidebar', closeSidebar)
 </script>
 
 <template>
@@ -30,6 +33,28 @@ const {
         <slot name="sidebar-bottom" />
       </template>
     </VPSidebar>
-    <VPContent/>
+    <VPContent>
+      <template #content-top>
+        <slot name="content-top" />
+      </template>
+      <template #content-bottom>
+        <slot name="content-bottom" />
+      </template>
+      <template #aside-top>
+        <slot name="aside-top" />
+      </template>
+      <template #aside-mid>
+        <slot name="aside-mid" />
+      </template>
+      <template #aside-bottom>
+        <slot name="aside-bottom" />
+      </template>
+      <template #footer-before>
+        <slot name="footer-before" />
+      </template>
+      <template #footer-after>
+        <slot name="footer-after" />
+      </template>
+    </VPContent>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { MenuBadgeItem, MenuItemWithLink } from '../../core'
-import { Label, Link } from 'destyler'
+import { Label } from 'destyler'
 import { useData } from 'vitepress'
 import VTMenuBadge from '../../core/components/VTMenuBadge.vue'
 import { isActive } from '../support/utils'
@@ -23,8 +23,10 @@ function hasActiveLink() {
   <section class="VPSidebarGroup">
     <Label
       class="group title"
+      :class="{ active: hasActiveLink() }"
     >
       {{ props.text }}
+      <VTMenuBadge v-if="badge" :item="badge" />
     </Label>
     <div class="mt-3 h-auto">
       <div class="text-sm text-inherit dark:text-inherit">

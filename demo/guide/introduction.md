@@ -74,7 +74,7 @@ In addition to text interpolation, we can also bind element attributes like this
 const AttributeBinding = {
   data() {
     return {
-      message: 'You loaded this page on ' + new Date().toLocaleString()
+      message: `You loaded this page on ${ new Date().toLocaleString()}`
     }
   }
 }

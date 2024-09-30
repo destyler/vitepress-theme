@@ -1,17 +1,10 @@
 <script lang="ts" setup>
 import { useData } from 'vitepress'
 import { computed } from 'vue'
-import { VTLink } from '../../core'
-import { useConfig } from '../composables/config'
+import VPCommunity from './VPCommunity.vue'
+import VPContentDocOutline from './VPContentDocOutline.vue'
 
 const { page, frontmatter } = useData()
-const { config } = useConfig()
-
-const repoUrl = computed(() => {
-  return `${config.value.editLink?.repo}/${
-    page.value.relativePath
-  }`
-})
 
 const pageClass = computed(() => {
   const { relativePath } = page.value
@@ -21,14 +14,18 @@ const pageClass = computed(() => {
 
 <template>
   <div
-    class="VPContentDoc"
+    class="vp-content-doc"
     :class="{ 'has-aside': frontmatter.aside !== false }"
   >
     <div class="container">
       <div v-if="frontmatter.aside !== false" class="aside">
         <div class="aside-container">
           <slot name="aside-top" />
+          <VPContentDocOutline
+            v-if="page.headers && frontmatter.outline !== false"
+          />
           <slot name="aside-mid" />
+          <VPCommunity />
           <slot name="aside-bottom" />
         </div>
       </div>
@@ -36,16 +33,6 @@ const pageClass = computed(() => {
         <slot name="content-top" />
         <main>
           <Content class="vt-doc" :class="pageClass" />
-          <p
-            v-if="config.editLink && frontmatter.editLink !== false"
-            class="edit-link"
-          >
-            <VTLink :href="repoUrl" :no-icon="true">
-              {{
-                config.editLink.text
-              }}
-            </VTLink>
-          </p>
         </main>
         <slot name="content-bottom" />
       </div>
@@ -54,7 +41,7 @@ const pageClass = computed(() => {
 </template>
 
 <style scoped>
-.VPContentDoc {
+.vp-content-doc {
   padding: 32px 24px 96px;
 }
 
@@ -109,25 +96,25 @@ const pageClass = computed(() => {
 }
 
 @media (min-width: 768px) {
-  .VPContentDoc {
+  .vp-content-doc {
     padding: 48px 32px 96px;
   }
 }
 
 @media (min-width: 960px) {
-  .VPContentDoc {
+  .vp-content-doc {
     padding: 64px 64px 96px;
   }
 }
 
 @media (min-width: 1280px) {
-  .VPContentDoc {
+  .vp-content-doc {
     padding: 64px 0 96px 64px;
   }
-  .VPContentDoc:not(.has-sidebar.has-aside) {
+  .vp-content-doc:not(.has-sidebar.has-aside) {
     padding-left: calc((100vw - 688px) / 2);
   }
-  .VPContentDoc.has-aside:not(.has-sidebar) {
+  .vp-content-doc.has-aside:not(.has-sidebar) {
     padding-left: calc((100vw - 688px - 320px) / 2);
   }
   .container {
@@ -138,7 +125,7 @@ const pageClass = computed(() => {
     margin: 0;
     order: 1;
   }
-  .VPContentDoc:not(.has-aside) .content {
+  .vp-content-doc:not(.has-aside) .content {
     min-width: 688px;
   }
   .aside {
@@ -148,7 +135,7 @@ const pageClass = computed(() => {
 }
 
 @media (min-width: 1440px) {
-  .VPContentDoc {
+  .vp-content-doc {
     padding: 64px 0 96px 96px;
   }
   .aside {

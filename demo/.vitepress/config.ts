@@ -46,6 +46,10 @@ export default defineConfigWithTheme<ThemeConfig>({
       { icon: 'discord', link: 'https://discord.com/invite/HBherRA' },
     ],
 
+    editLink: {
+      repo: 'https://github.com/vuejs/docs/tree/main/src',
+    },
+
     nav: [
       {
         text: 'Docs',

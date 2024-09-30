@@ -1,13 +1,16 @@
 <script lang="ts" setup>
 import { Button, Icon } from 'destyler'
+import { useData } from 'vitepress'
 import { useConfig } from '../composables/config'
 import { useSidebar } from '../composables/sidebar'
+import VPLocalNavOutlineDropdown from './VPLocalNavOutlineDropdown.vue'
 
 const props = defineProps<{ open: boolean }>()
 const emits = defineEmits(['open-menu'])
 
 const { hasSidebar } = useSidebar()
 const { config } = useConfig()
+const { frontmatter } = useData()
 </script>
 
 <template>
@@ -21,6 +24,7 @@ const { config } = useConfig()
       <Icon name="carbon:text-align-left" class="menu-icon" />
       <span class="menu-text">{{ config.i18n?.menu || 'Menu' }}</span>
     </Button>
+    <VPLocalNavOutlineDropdown v-if="frontmatter.outline !== false" />
   </div>
 </template>
 
