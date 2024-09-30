@@ -10,3 +10,6 @@
 @import './vt-flyout.css';
 @import './vt-hamburger.css';
 @import './vt-backdrop.css';
+@import './vt-doc-base.css';
+@import './vt-doc-code.css';
+@import './vt-doc-custom-blocks.css';
