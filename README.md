@@ -27,6 +27,10 @@ $ pnpm serve
 $ pnpm lint
 ```
 
+## Credits
+
+- Vuejs Theme - https://github.com/vuejs/theme
+
 ## License
 
 [MIT](./LICENSE)
