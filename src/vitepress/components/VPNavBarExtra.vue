@@ -30,7 +30,7 @@ const hasContent = computed(() => {
   </VTFlyout>
 </template>
 
-<style scoped>
+<style>
 .vp-nav-bar-extra-icon{
   --at-apply:
     w-20px h-20px cursor-pointer
