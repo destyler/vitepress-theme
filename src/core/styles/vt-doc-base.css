@@ -1,6 +1,5 @@
 .vt-doc {
-  font-size: 16px;
-  line-height: 1.7;
+  --at-apply: text-base leading-[1.7];
 }
 
 .vt-doc h1,
@@ -9,59 +8,50 @@
 .vt-doc h4,
 .vt-doc h5,
 .vt-doc h6 {
-  position: relative;
-  font-weight: 600;
-  line-height: 1.5;
+  --at-apply: relative font-semibold leading-normal;
   outline: none;
 }
 
 .vt-doc h1 {
-  margin: 0 0 3rem;
-  font-size: 38px;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
+  --at-apply: text-[38px] leading-[1.4] tracking-[-0.02em] mb-12;
 }
 
 .vt-doc h2 {
-  --at-apply: border-t border-t-border;
-  margin: 4rem 0 1.8rem;
-  padding-top: 1.8rem;
-  font-size: 24px;
-  letter-spacing: -0.02em;
+  --at-apply:
+    border-t border-t-border
+    text-2xl tracking-[-0.02em]
+    mt-16 mb-[1.8rem] mx-0
+    pt-[1.8rem];
 }
 
 @media (max-width: 768px) {
   .vt-doc h1 {
-    font-size: 32px;
-    margin-bottom: 1.8rem;
+    --at-apply: text-[32px] mb-[1.8rem];
   }
   .vt-doc h1 + h2 {
-    margin-top: 36px;
+    --at-apply: mt-9;
   }
 }
 
 .vt-doc h3 {
-  font-size: 19px;
-  letter-spacing: -0.01em;
-  margin: 3rem 0 1.25rem;
+  --at-apply:
+    text-[19px] tracking-[-0.01em]
+    mt-12 mb-5;
 }
 
 .vt-doc h2 + h3 {
-  margin-top: 0;
+  --at-apply: mt-0;
 }
 
 .vt-doc h4 {
-  font-size: 17px;
-  margin: 1.8rem 0 1rem;
+  --at-apply: text-[17px] mt-[1.8rem] mb-4 mx-0;
 }
 
 .vt-doc .header-anchor {
-  --at-apply: border-none;
-  float: left;
-  margin-left: -0.87em;
-  padding-right: 0.23em;
-  font-weight: 500;
-  opacity: 0;
+  --at-apply:
+    border-none float-left
+    ml-[-0.87em] font-medium
+    op-0 pr-[0.23em];
   transition: color 0.25s, opacity 0.25s;
 }
 
@@ -82,25 +72,24 @@
 .vt-doc h5 .header-anchor:focus,
 .vt-doc h6:hover .header-anchor,
 .vt-doc h6 .header-anchor:focus {
-  --at-apply: border-none;
-  opacity: 1;
+  --at-apply: border-none op-100;
 }
 
 .vt-doc hr {
-  --at-apply: border-t border-t-border;
+  --at-apply: border-t border-t-border my-[1.8rem];
   border: none;
-  margin: 1.8rem 0;
 }
 
 .vt-doc p,
 .vt-doc ul,
 .vt-doc ol,
 .vt-doc summary {
-  margin-bottom: 1.2em;
+  --at-apply: mb-4.8;
 }
 
 .vt-doc a {
-  --at-apply: text-primary/90 border-b border-b-dashed border-b-foreground/60;
+  --at-apply:
+    text-primary/90 border-b border-b-dashed border-b-foreground/60;
   font-weight: 500;
   transition: color 0.25s;
   text-decoration-style: dotted;
@@ -111,14 +100,11 @@
 }
 
 .vt-doc strong {
-  font-weight: 600;
+  --at-apply: font-semibold;
 }
 
 .vt-doc table {
-  display: block;
-  border-collapse: collapse;
-  margin: 1rem 0;
-  overflow-x: auto;
+  --at-apply: block overflow-x-auto mx-0 my-4 border-collapse;;
 }
 
 .vt-doc tr {
@@ -127,39 +113,36 @@
 }
 
 .vt-doc tr:nth-child(2n) {
-  background-color: var(--vt-c-bg-soft);
+  --at-apply: bg-card;
 }
 
 .vt-doc th,
 .vt-doc td {
-  border: 1px solid var(--vt-c-divider);
-  padding: 0.6em 1em;
+  --at-apply: border border-border px-4 py-2.4;
 }
 
 .vt-doc blockquote {
-  margin: 1rem 0;
-  border-left: 0.2rem solid var(--vt-c-divider);
-  padding-left: 1rem;
+  --at-apply:
+    border-l border-l-[0.2rem]
+    border-l-primary pl-4 my-4;
   transition: border-color 0.5s;
 }
 
 .vt-doc blockquote > p {
-  margin: 0;
-  font-size: 16px;
-  color: var(--vt-c-text-2);
+  --at-apply: m-0 text-4 text-muted-foreground;
   transition: color 0.5s;
 }
 
 .vt-doc figure {
-  margin: 0;
+  --at-apply: m-0;
 }
 
 .vt-doc img {
-  max-width: 100%;
+  --at-apply: w-full;
 }
 
 .vt-doc p > img {
-  margin: 28px auto;
+  --at-apply: mx-auto my-7;
 }
 
 .vt-doc ol {
@@ -194,81 +177,64 @@
 }
 
 .vt-doc ol > li {
+  --at-apply: relative pl-6;
   counter-increment: item;
-  position: relative;
-  padding-left: 1.5rem;
 }
 
 .vt-doc ol > li:before {
-  position: absolute;
-  left: 2px;
-  top: 1px;
-  font-weight: bold;
-  font-size: 14px;
-  color: var(--vt-c-text-3);
+  --at-apply:
+    text-muted-foreground absolute
+    left-2px top-px font-[bold] text-sm;
+
   content: counter(item) '.';
 }
 
 @media (min-width: 768px) {
   .vt-doc ol > li:before {
-    top: 2px;
+    --at-apply: top-2px;
   }
 }
 
 .vt-doc li {
-  position: relative;
-  margin: 1px 0;
+  --at-apply: relative my-px;
 }
 
 .vt-doc ul {
-  padding-left: 1.25rem;
+  --at-apply: pl-5;
 }
 
 .vt-doc ul > li:before {
+  --at-apply:
+    text-muted-foreground absolute w-[5px]
+    h-[5px] rounded-[50%] left-[-1.25rem]
+    top-3;
   content: '';
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: var(--vt-c-text-3);
   transition: background-color 0.5s;
-  left: -1.25rem;
-  top: 0.75rem;
 }
 
 .vt-doc .video::before {
-  display: block;
+  --at-apply: block pt-[56.25%];
   content: '';
-  padding-top: 56.25%;
 }
 
 .vt-doc .video {
-  overflow: hidden;
+  --at-apply: overflow-hidden min-w-[415px] relative mt-0 mb-[18px] -mx-6;
   width: calc(100% + 48px);
-  min-width: 415px;
-  position: relative;
-  margin: 0 -24px 18px;
 }
 
 .vt-doc .video-content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+  --at-apply: absolute w-full h-full border-0 left-0 inset-y-0;
 }
 
 @media (min-width: 640px) {
   .vt-doc .video {
-    border-radius: 8px;
+    --at-apply: rounded-md;
   }
 }
 
 @media (max-width: 463px) {
   .vt-doc .video {
-    width: 100%;
+    --at-apply: w-full;
     margin: 0 calc((100vw - 463px) / 2) 18px;
   }
 }

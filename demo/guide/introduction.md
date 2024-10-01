@@ -44,7 +44,7 @@ Vue.createApp(Counter).mount('#counter')
 
 We have already created our very first Vue app! This looks pretty similar to rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now **reactive**. How do we know? Take a look at the example below where `counter` property increments every second and you will see how rendered DOM changes:
 
-```js{8-10}
+```js:line-numbers
 const Counter = {
   data() {
     return {
@@ -74,7 +74,7 @@ In addition to text interpolation, we can also bind element attributes like this
 const AttributeBinding = {
   data() {
     return {
-      message: `You loaded this page on ${ new Date().toLocaleString()}`
+      message: `You loaded this page on ${new Date().toLocaleString()}`
     }
   }
 }

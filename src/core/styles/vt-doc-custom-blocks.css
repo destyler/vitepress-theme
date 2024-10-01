@@ -1,37 +1,25 @@
 .vt-doc .custom-block {
-  --at-apply: bg-card rounded-lg;
-  margin: 28px 0;
-  padding: 20px 24px 4px 42px;
-  overflow-x: auto;
+  --at-apply:
+    bg-card rounded-lg overflow-x-auto
+    my-7 pl-[42px] pr-6 pt-5 pb-1 text-sm
+    relative leading-[1.6] font-medium;
   transition: color 0.5s, background-color 0.5s;
-  position: relative;
-  font-size: 14px;
-  line-height: 1.6;
-  font-weight: 500;
 }
 
 
 .vt-doc .custom-block:before {
+  --at-apply: absolute font-semibold text-[15px] left-[17px] top-5;
   content: 'ⓘ';
-  position: absolute;
-  font-weight: 600;
-  font-size: 15px;
-  top: 20px;
-  left: 17px;
 }
 
 .vt-doc .custom-block.warning:before,
 .vt-doc .custom-block.danger:before {
+  --at-apply: text-[17px] left-4 top-[19px];
   content: '⚠';
-  font-size: 17px;
-  top: 19px;
-  left: 16px;
 }
 
 .vt-doc .custom-block .custom-block-title {
-  margin-bottom: 8px;
-  font-size: 15px;
-  font-weight: 500;
+  --at-apply: text-[15px] font-medium mb-2;
   transition: color 0.5s;
 }
 

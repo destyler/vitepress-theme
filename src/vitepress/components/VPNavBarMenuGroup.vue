@@ -37,7 +37,7 @@ handleSetTriggerX(props.item.text!, x)
   </NavigationContent>
 </template>
 
-<style scoped>
+<style>
 .vp-nav-bar-menu-button {
   --at-apply:
     flex items-center h-[var(--vt-nav-height)]
