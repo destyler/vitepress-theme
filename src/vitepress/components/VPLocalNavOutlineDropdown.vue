@@ -42,13 +42,13 @@ function scrollToTop() {
 </script>
 
 <template>
-  <div class="vp-local-nav-outline-dropdown" :style="{ '--vt-vh': `${vh}px` }">
+  <div class="vp-local-nav-outline-dropdown " :style="{ '--vt-vh': `${vh}px` }">
     <Button :class="{ open }" @click="toggle">
       {{ config.i18n?.toc ?? 'On this page' }}
       <VTIconChevronRight class="icon" />
     </Button>
     <Transition name="flyout">
-      <div v-if="open" ref="items" class="items" @click="onItemClick">
+      <div v-if="open" ref="items" class="items scrollbar-hide" @click="onItemClick">
         <a class="top-link" href="#" @click="scrollToTop">
           {{ config.i18n?.returnToTop || 'Return to top' }}
         </a>

@@ -10,7 +10,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <NavigationLink class="vp-nav-bar-menu-link">
+  <NavigationLink class="vp-nav-bar-menu-link" :href="props.item.link">
     {{ props.item.text }}
   </NavigationLink>
 </template>
