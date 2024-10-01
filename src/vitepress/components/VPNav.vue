@@ -22,7 +22,7 @@ provide('close-screen', closeScreen)
   </header>
 </template>
 
-<style>
+<style scoped>
 .vp-nav {
   --at-apply: relative top-0 left-0 bg-background z-10;
 }

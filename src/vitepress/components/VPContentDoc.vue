@@ -17,9 +17,9 @@ const pageClass = computed(() => {
     class="vp-content-doc"
     :class="{ 'has-aside': frontmatter.aside !== false }"
   >
-    <div class="container">
+    <div class="containering">
       <div v-if="frontmatter.aside !== false" class="aside">
-        <div class="aside-container">
+        <div class="aside-containering">
           <slot name="aside-top" />
           <VPContentDocOutline
             v-if="page.headers && frontmatter.outline !== false"
@@ -63,14 +63,14 @@ const pageClass = computed(() => {
   width: 320px;
 }
 
-.aside-container {
+.aside-containering {
   position: sticky;
   width: 224px;
   top: calc(var(--vt-nav-height) + var(--vt-banner-height, 0px) + 24px);
   bottom: 0;
 }
 
-.aside-container::-webkit-scrollbar {
+.aside-containering::-webkit-scrollbar {
   display: none;
 }
 
@@ -117,7 +117,7 @@ const pageClass = computed(() => {
   .vp-content-doc.has-aside:not(.has-sidebar) {
     padding-left: calc((100vw - 688px - 320px) / 2);
   }
-  .container {
+  .containering {
     display: flex;
   }
   .content {

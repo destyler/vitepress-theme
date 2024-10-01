@@ -26,7 +26,7 @@ function unlockBodyScroll() {
     @after-leave="unlockBodyScroll"
   >
     <div v-if="open" ref="screen" class="vp-nav-screen">
-      <div class="container">
+      <div class="containering">
         <VPNavScreenMenu />
         <VPNavScreenSocialLinks class="mt-4" />
       </div>
@@ -49,8 +49,8 @@ function unlockBodyScroll() {
   transition: opacity 0.25s;
 }
 
-.vp-nav-screen.fade-enter-active .container,
-.vp-nav-screen.fade-leave-active .container {
+.vp-nav-screen.fade-enter-active .containering,
+.vp-nav-screen.fade-leave-active .containering {
   transition: transform 0.25s ease;
 }
 
@@ -59,8 +59,8 @@ function unlockBodyScroll() {
   --at-apply: op-0;
 }
 
-.vp-nav-screen.fade-enter-from .container,
-.vp-nav-screen.fade-leave-to .container {
+.vp-nav-screen.fade-enter-from .containering,
+.vp-nav-screen.fade-leave-to .containering {
   transform: translateY(-8px);
 }
 
@@ -70,7 +70,7 @@ function unlockBodyScroll() {
   }
 }
 
-.container {
+.containering {
   --at-apply: flex flex-col max-w-288px mx-auto pt-6 pb-24;
 }
 

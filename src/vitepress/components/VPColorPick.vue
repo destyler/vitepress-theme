@@ -103,7 +103,7 @@ const RADII = [0, 0.25, 0.5, 0.75, 1]
   </VTFlyout>
 </template>
 
-<style>
+<style scoped>
 .vp-color-pick-box{
   --at-apply: grid grid-cols-3 gap-2px;
 }

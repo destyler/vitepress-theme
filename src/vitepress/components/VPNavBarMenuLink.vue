@@ -15,7 +15,7 @@ const props = defineProps<{
   </NavigationLink>
 </template>
 
-<style>
+<style scoped>
 .vp-nav-bar-menu-link {
   --at-apply:
     flex items-center h-[var(--vt-nav-height)]

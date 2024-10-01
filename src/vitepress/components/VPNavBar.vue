@@ -38,7 +38,7 @@ const emits = defineEmits(['toggle-screen'])
   </div>
 </template>
 
-<style>
+<style scoped>
 .vp-nav-bar {
   --at-apply:
     relative
