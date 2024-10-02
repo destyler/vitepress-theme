@@ -4,7 +4,7 @@ import type {
 } from '../../core'
 import type { SidebarGroup } from '../config'
 import { Button, Icon } from 'destyler'
-import { useData } from 'vitepress'
+import { useData, useRouter } from 'vitepress'
 import { computed } from 'vue'
 import { useConfig } from '../composables/config'
 import { getSidebar } from '../support/sidebar'
@@ -34,6 +34,12 @@ function getFlatSideBarLinks(sidebar: SidebarGroup[]): MenuItemWithLink[] {
   }
   return links
 }
+
+const router = useRouter()
+
+function goto(link: string) {
+  router.go(link)
+}
 </script>
 
 <template>
@@ -47,6 +53,7 @@ function getFlatSideBarLinks(sidebar: SidebarGroup[]): MenuItemWithLink[] {
       dark:border-white! dark:border-op-10!
       hover:bg-#F4F4F5/50 dark:hover:bg-#27272A/50
       group text-left"
+      @click="goto(links.prev.link)"
     >
       <div
         class="
@@ -73,6 +80,7 @@ function getFlatSideBarLinks(sidebar: SidebarGroup[]): MenuItemWithLink[] {
       dark:border-white! dark:border-op-10!
       hover:bg-#F4F4F5/50 dark:hover:bg-#27272A/50
       group text-right"
+      @click="goto(links.next.link)"
     >
       <div
         class="
