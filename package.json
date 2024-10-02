@@ -1,7 +1,7 @@
 {
   "name": "@destyler/vitepress-theme",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "VitePress theme for destyler.org.",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
