@@ -151,7 +151,7 @@ watch(openStatus, (value) => {
   </DialogRoot>
 </template>
 
-<style scoped>
+<style>
 .vp-nav-bar-search {
   --at-apply: flex items-center pl-4 md:grow-1;
 }
