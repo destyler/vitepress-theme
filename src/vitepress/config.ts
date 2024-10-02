@@ -62,6 +62,11 @@ export interface Config {
     }
 
     copyright?: string
+
+    links?: {
+      text: string
+      link: string
+    }[]
   }
 
   /**

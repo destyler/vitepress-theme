@@ -1,7 +1,5 @@
 .vt-hamburger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --at-apply: flex justify-center items-center;
 }
 
 .vt-hamburger:hover .vt-hamburger-top    { top: 0; left: 0; transform: translateX(4px); }
@@ -20,19 +18,13 @@
 }
 
 .vt-hamburger-container {
-  position: relative;
-  width: 16px;
-  height: 14px;
-  overflow: hidden;
+  --at-apply: relative w-4 h-14px overflow-hidden;
 }
 
 .vt-hamburger-top,
 .vt-hamburger-middle,
 .vt-hamburger-bottom {
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background-color: white;
+  --at-apply: absolute w-4 h-2px bg-white;
   transition: top .25s, background-color .5s, transform .25s;
 }
 

@@ -1,56 +1,50 @@
 <script lang="ts" setup>
-import { VTLink } from '../../core'
+import {
+  Image,
+  ImageFallback,
+  ImageRoot,
+  Link,
+} from 'destyler'
+import { useData } from 'vitepress'
 import { useConfig } from '../composables/config'
+import VPFooterLinks from './VPFooterLinks.vue'
+import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
+
+const { isDark } = useData()
 
 const { config } = useConfig()
 </script>
 
 <template>
-  <div class="VPFooter">
-    <p v-if="config.footer?.license" class="license">
-      {{ config.i18n?.footerLicense?.before ?? 'Released under the '
-      }}<VTLink class="link" :href="config.footer.license.link" no-icon>
-{{
-        config.footer.license.text
-      }}
-</VTLink>{{ config.i18n?.footerLicense?.after ?? '.' }}
-    </p>
-
-    <p v-if="config.footer?.copyright" class="copyright">
-      {{ config.footer.copyright }}
-    </p>
+  <div class="w-full h-px bg-border flex items-center justify-center mb-3 mt-12">
+    <div class="bg-white dark:bg-black px-4">
+      <ImageRoot>
+        <Image
+          :src="typeof config.logo === 'string' ? config.logo : isDark ? config.logo?.dark : config.logo?.light"
+          class="w-6 h-6"
+        />
+        <ImageFallback>DS</ImageFallback>
+      </ImageRoot>
+    </div>
   </div>
+  <footer class="relative">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-8 lg:py-4 lg:flex lg:items-center lg:justify-between lg:gap-x-3">
+      <div class="lg:flex-1 flex items-center justify-center lg:justify-end gap-x-1.5 lg:order-3">
+        <VPNavBarSocialLinks />
+      </div>
+      <div class="mt-3 lg:mt-0 lg:order-2 flex items-center justify-center">
+        <VPFooterLinks />
+      </div>
+      <div class="flex items-start justify-center lg:justify-start lg:flex-1 gap-x-1.5 mt-3 lg:mt-0 lg:order-1">
+        <Link :to="config.footer?.license?.link" class="text-sm text-gray-500 dark:text-gray-400">
+          Published under
+          <span class="text-gray-900 dark:text-white">{{ config.footer?.license?.text }}</span>
+        </Link>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
-.VPFooter {
-  border-top: 1px solid var(--vt-c-bg-soft);
-  padding: 23px 24px 24px;
-  background-color: var(--vt-c-bg-soft);
-  transition: border-top 0.5s, background-color 0.5s;
-}
 
-.dark .VPFooter {
-  border-top: 1px solid var(--vt-c-divider-light);
-  background-color: var(--vt-c-bg);
-}
-
-.license,
-.copyright {
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--vt-c-text-2);
-  transition: color 0.25s;
-}
-
-.link {
-  color: var(--vt-c-text-1);
-  transition: color 0.25s;
-}
-
-.link:hover {
-  color: var(--vt-c-text-2);
-}
 </style>

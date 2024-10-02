@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 import { useData } from 'vitepress'
 import { computed } from 'vue'
+import { VTDivider } from '../../core'
 import VPCommunity from './VPCommunity.vue'
+import VPContentDocFooter from './VPContentDocFooter.vue'
 import VPContentDocOutline from './VPContentDocOutline.vue'
 
 const { page, frontmatter } = useData()
@@ -33,8 +35,10 @@ const pageClass = computed(() => {
         <slot name="content-top" />
         <main>
           <Content class="vt-doc" :class="pageClass" />
+          <VTDivider />
         </main>
         <slot name="content-bottom" />
+        <VPContentDocFooter v-if="frontmatter.footer !== false" />
       </div>
     </div>
   </div>

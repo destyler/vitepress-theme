@@ -360,6 +360,20 @@ export default defineConfigWithTheme<ThemeConfig>({
       ],
     },
 
+    footer: {
+      license: {
+        text: 'MIT License',
+        link: 'https://opensource.org/licenses/MIT',
+      },
+      copyright: `Copyright © 2014-${new Date().getFullYear()} Evan You`,
+      links: [
+        { text: 'Figma Kit', link: '' },
+        { text: 'Playground', link: 'https://play.destyler.org/' },
+        { text: 'Roadmap', link: 'https://github.com/destyler/destyler/pulls?q=sort:updated-desc+is:pr+is:open' },
+        { text: 'Release', link: 'https://github.com/destyler/destyler/releases' },
+      ],
+    },
+
     // For locale links
     localeLinks: [
       {
