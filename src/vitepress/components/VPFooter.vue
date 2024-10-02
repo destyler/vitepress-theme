@@ -17,7 +17,7 @@ const { config } = useConfig()
 
 <template>
   <div class="w-full h-px bg-border flex items-center justify-center mb-3 mt-12">
-    <div class="bg-white dark:bg-black px-4">
+    <div class="bg-background px-4">
       <ImageRoot>
         <Image
           :src="typeof config.logo === 'string' ? config.logo : isDark ? config.logo?.dark : config.logo?.light"
