@@ -1,13 +1,10 @@
-import type { ThemeCSSVarKey, ThemeCSSVars, ThemeCSSVarsVariant } from './themes'
-import type { ColorOptions, PresetOptions } from './types'
-
 import { mergeDeep } from 'unocss'
-import { themeCSSVarKeys, themes } from './themes'
+import { themeCSSVarKeys, themes } from './themes.js'
 
-function generateColorCSSVars(color: ThemeCSSVars) {
+function generateColorCSSVars(color) {
   return Object.entries(color)
     .map(([key, value]) => {
-      if (!themeCSSVarKeys.includes(key as ThemeCSSVarKey))
+      if (!themeCSSVarKeys.includes(key))
         return ''
       return `  --${key}: ${value};`
     })
@@ -15,7 +12,7 @@ function generateColorCSSVars(color: ThemeCSSVars) {
     .join('\n')
 }
 
-function colorCSSVarsStyles(lightVars: string, darkVars: string, { radius, themeName, darkSelector }: { radius?: number | false, themeName?: string | false, darkSelector: string }) {
+function colorCSSVarsStyles(lightVars, darkVars, { radius, themeName, darkSelector }) {
   return `
 ${themeName ? `.theme-${themeName}` : ':root'} {
 ${lightVars}
@@ -26,11 +23,11 @@ ${darkVars}
 }`
 }
 
-function generateRadiusCSSVars(radius: number) {
+function generateRadiusCSSVars(radius) {
   return `  --radius: ${radius}rem;`
 }
 
-function radiusCSSVarsStyles(radius: number) {
+function radiusCSSVarsStyles(radius) {
   return `
 :root {
 ${generateRadiusCSSVars(radius)}
@@ -51,7 +48,7 @@ body {
 `
 }
 
-function getBuiltInTheme(name: string): ThemeCSSVarsVariant {
+function getBuiltInTheme(name) {
   const theme = themes.find(t => t.name === name)
   if (!theme)
     throw new Error(`Unknown color: ${name}`)
@@ -61,10 +58,10 @@ function getBuiltInTheme(name: string): ThemeCSSVarsVariant {
   }
 }
 
-function getColorTheme(color: ColorOptions) {
-  let light: ThemeCSSVars
-  let dark: ThemeCSSVars
-  let name: string
+function getColorTheme(color) {
+  let light
+  let dark
+  let name
 
   if (typeof color === 'string') {
     name = color
@@ -81,10 +78,7 @@ function getColorTheme(color: ColorOptions) {
   return { light, dark, name }
 }
 
-export function generateCSSVars(
-  theme: PresetOptions,
-  onlyOne = true,
-): string {
+export function generateCSSVars(theme, onlyOne = true) {
   if (Array.isArray(theme))
     return theme.map(t => generateCSSVars(t, false)).join('\n')
 

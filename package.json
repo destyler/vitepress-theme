@@ -15,6 +15,10 @@
       "types": "./src/vitepress/config/baseConfig.d.ts",
       "default": "./src/vitepress/config/baseConfig.js"
     },
+    "./unocss": {
+      "types": "./src/vitepress/unocss/index.d.ts",
+      "default": "./src/vitepress/unocss/index.js"
+    },
     "./src/*": "./src/*"
   },
   "main": "src/index.ts",

@@ -5,7 +5,7 @@ import {
 } from 'destyler'
 import { computed, nextTick, onMounted, watch } from 'vue'
 import { VTFlyout, VTThemeAppearance, VTThemeColorPickPill, VTThemeRadiusPill } from '../../core'
-import { themes } from '../colors/themes'
+import { themes } from '../unocss/themes'
 
 const colors = computed(() => {
   const result = []

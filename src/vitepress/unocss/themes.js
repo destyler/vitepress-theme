@@ -1,4 +1,3 @@
-type ThemeColorString = `${number} ${number}% ${number}%`
 export const themeCSSVarKeys = [
   'background',
   'foreground',
@@ -19,18 +18,7 @@ export const themeCSSVarKeys = [
   'border',
   'input',
   'ring',
-] as const
-export type ThemeCSSVarKey = (typeof themeCSSVarKeys)[number]
-
-export type ThemeCSSVars = {
-  [K in ThemeCSSVarKey]: ThemeColorString
-}
-
-export interface ThemeCSSVarsVariant {
-  name: string
-  light: ThemeCSSVars
-  dark: ThemeCSSVars
-}
+]
 
 export const themes = [
   {
@@ -454,6 +442,4 @@ export const themes = [
       },
     },
   },
-] as const
-
-export type Theme = (typeof themes)[number]
+]

@@ -1,6 +1,3 @@
-import type { Preset } from 'unocss'
-import type { Theme } from 'unocss/preset-mini'
-import type { PresetOptions } from './colors/types'
 import {
   presetAttributify,
   presetUno,
@@ -9,17 +6,17 @@ import {
 } from 'unocss'
 
 import { presetAnimations } from 'unocss-preset-animations'
-import { generateCSSVars, generateGlobalStyles } from './colors/generate'
-import { themes } from './colors/themes'
+import { generateCSSVars, generateGlobalStyles } from './generate'
+import { themes } from './themes'
 
 export const builtinColors = themes.map(theme => theme.name)
-export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1] as const
+export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1]
 
 /**
  * @param globals Generates global variables, like *.border-color, body.color, body.background.
  * @default
  */
-export function presetDestyler(options: PresetOptions = {}, globals = true): Preset<Theme> {
+export function presetDestyler(options = {}, globals = true) {
   return {
     name: 'unocss-preset-destyler',
     shortcuts: [
