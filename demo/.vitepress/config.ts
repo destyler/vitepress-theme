@@ -1,4 +1,4 @@
-import type { Config as ThemeConfig } from '../../src/vitepress/config'
+import type { Config as ThemeConfig } from '../../'
 import path from 'node:path'
 import { presetUno } from 'unocss'
 import UnoCss from 'unocss/vite'
