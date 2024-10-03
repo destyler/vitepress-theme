@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import VPApp from './components/VPApp.vue'
 import { withConfigProvider } from './composables/config'
+import { presetDestyler } from './unocss'
 
 import './styles/variable.css'
 import './styles/main.css'
@@ -10,4 +11,9 @@ const VPTheme: Theme = {
   Layout: withConfigProvider(VPApp),
 }
 
-export { VPTheme }
+export {
+  presetDestyler,
+  VPTheme
+}
+
+export type { Config } from './config'
