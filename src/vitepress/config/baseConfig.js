@@ -1,6 +1,3 @@
-import type { UserConfig } from 'vitepress'
-import type { Config } from '../config'
-
 /**
  * This file is intended to be required from VitePress
  * consuming project's config file.
@@ -11,7 +8,7 @@ import type { Config } from '../config'
 // for local-linked development
 const deps = ['@destyler/vitepress-theme', '@vueuse/core', 'body-scroll-lock']
 
-const config: UserConfig<Config> = {
+const config = {
   scrollOffset: ['header', '.VPLocalNav'],
 
   vite: {
