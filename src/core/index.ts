@@ -1,5 +1,5 @@
-export {default as VTIconChevronRight} from './components/icons/VTIconChevronRight.vue'
-export {default as VTIconExternalLink} from './components/icons/VTIconExternalLink.vue'
+export { default as VTIconChevronRight } from './components/icons/VTIconChevronRight.vue'
+export { default as VTIconExternalLink } from './components/icons/VTIconExternalLink.vue'
 export { default as VTBackdrop } from './components/VTBackdrop.vue'
 export { default as VTDivider } from './components/VTDivider.vue'
 export { default as VTFlyout } from './components/VTFlyout.vue'
