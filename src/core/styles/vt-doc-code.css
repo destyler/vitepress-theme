@@ -5,7 +5,7 @@
 
 /* inline code */
 .vt-doc :not(pre) > code {
-  --at-apply: bg-popover rounded-md px-[0.5em] py-[0.15em];
+  --at-apply: bg-primary p-1 text-accent rounded-sm px-[0.5em] py-[0.15em];
   transition: color 0.5s, background-color 0.5s;
 }
 

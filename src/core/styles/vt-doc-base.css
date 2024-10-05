@@ -89,14 +89,14 @@
 
 .vt-doc a {
   --at-apply:
-    text-primary/90 border-b border-b-dashed border-b-foreground/60;
+    text-primary/90 border-b border-b-dashed border-b-primary;
   font-weight: 500;
   transition: color 0.25s;
   text-decoration-style: dotted;
 }
 
 .vt-doc a:hover {
-  --at-apply: text-primary border-b-foreground;
+  --at-apply: text-primary border-b-solid;
 }
 
 .vt-doc strong {
