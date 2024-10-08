@@ -12,7 +12,10 @@ npm install -D @destyler/vitepress
 // .vitepress/vite.config.ts
 import type { Config as ThemeConfig } from '@destyler/vitepress-theme'
 import baseConfig from '@destyler/vitepress-theme/config'
-import { builtinColors, presetDestyler } from '@destyler/vitepress-theme/unocss'
+import {
+  builtinColors,
+  presetDestyler
+} from '@destyler/vitepress-theme/unocss'
 import { presetUno } from 'unocss'
 import UnoCss from 'unocss/vite'
 import { defineConfigWithTheme } from 'vitepress'

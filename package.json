@@ -31,9 +31,8 @@
     "lint:fix": "eslint . --fix",
     "type": "vue-tsc --noEmit",
     "test": "npm run lint && npm run type",
-    "dev": "vitepress dev demo",
-    "demo-build": "vitepress build demo",
-    "serve": "npm run demo-build && vitepress serve demo",
+    "docs:dev": "pnpm -C docs run dev",
+    "docs:build": "pnpm -C docs run build",
     "release": "bumpp && pnpm -r publish --access public"
   },
   "peerDependencies": {

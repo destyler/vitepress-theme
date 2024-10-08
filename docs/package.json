@@ -3,7 +3,8 @@
   "type": "module",
   "private": "true",
   "scripts": {
-    "dev": "vitepress dev"
+    "dev": "vitepress dev",
+    "build": "vitepress build"
   },
   "dependencies": {
     "@destyler/vitepress-theme": "workspace:*",

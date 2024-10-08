@@ -79,7 +79,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         items: [
           {
             items: [
-              { text: 'Guide', link: '/guide/introduction' },
+              { text: 'Guide', link: '/guide/introduction', badge: { text: 'New', type: 'success' } },
               { text: 'Quick Start', link: '/guide/quick-start' },
             ],
           },
@@ -104,6 +104,19 @@ export default defineConfigWithTheme<ThemeConfig>({
           items: [
             { text: 'Introduction', link: '/guide/introduction', icon: 'carbon:ai-status' },
             { text: 'Quick Start', link: '/guide/quick-start' },
+          ],
+        },
+        {
+          text: 'Layout',
+          items: [
+            { text: 'Home Page', link: '/layout/home-page' },
+            { text: 'Navbar', link: '/layout/navbar' },
+          ],
+        },
+        {
+          text: 'Markdown',
+          items: [
+            { text: 'Extensions', link: '/markdown/index' },
           ],
         },
       ],

@@ -2,6 +2,7 @@ export { default as DotPattern } from './components/background/DotPattern.vue'
 export { default as GridPattern } from './components/background/GridPattern.vue'
 export { default as InstallScript } from './components/background/InstallScript.vue'
 export { default as LandingBackground } from './components/background/LandingBackground.vue'
+export { default as Playground } from './components/background/Playground.vue'
 
 export { default as VTIconChevronRight } from './components/icons/VTIconChevronRight.vue'
 
