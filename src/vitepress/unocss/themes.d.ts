@@ -14,4 +14,4 @@ export interface ThemeCSSVarsVariant {
 
 export type Themes = (any)[number]
 
-export const themes: Themes
+declare const themes: Themes

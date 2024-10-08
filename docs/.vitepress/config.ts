@@ -6,7 +6,7 @@ import UnoCss from 'unocss/vite'
 import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
+  extends: baseConfig as any,
 
   vite: {
     build: {
