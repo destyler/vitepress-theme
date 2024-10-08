@@ -18,7 +18,7 @@ export function useSidebar() {
   })
 
   const hasSidebar = computed(
-    () => frontmatter.value.sidebar !== false && sidebar.value.length > 0,
+    () => frontmatter.value.sidebar !== false && sidebar.value.length > 0 && route.path !== '/',
   )
 
   function open() {

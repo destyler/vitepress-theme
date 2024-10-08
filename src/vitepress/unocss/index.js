@@ -6,8 +6,8 @@ import {
 } from 'unocss'
 
 import { presetAnimations } from 'unocss-preset-animations'
-import { generateCSSVars, generateGlobalStyles } from './generate'
-import { themes } from './themes'
+import { generateCSSVars, generateGlobalStyles } from './generate.js'
+import { themes } from './themes.js'
 
 export const builtinColors = themes.map(theme => theme.name)
 export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1]

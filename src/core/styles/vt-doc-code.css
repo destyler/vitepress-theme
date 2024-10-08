@@ -22,7 +22,7 @@
 .vt-doc div[class*='language-'] {
   --at-apply:
     bg-card border rounded-md border-border
-    relative overflow-x-auto -mx-4 my-7;
+    relative overflow-x-auto my-7;
   transition: background-color 0.5s;
 }
 
