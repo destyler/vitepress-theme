@@ -3,6 +3,8 @@ import baseConfig from '@destyler/vitepress-theme/config'
 import { builtinColors, presetDestyler } from '@destyler/vitepress-theme/unocss'
 import { presetUno } from 'unocss'
 import UnoCss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme<ThemeConfig>({
@@ -18,6 +20,24 @@ export default defineConfigWithTheme<ThemeConfig>({
           presetUno(),
           presetDestyler(builtinColors.map(c => ({ color: c }))),
         ],
+      }),
+      Components({
+        include: [/\.vue/, /\.md/],
+        dirs: [
+          '.vitepress/components',
+        ],
+        dts: '.vitepress/components.d.ts',
+      }),
+      AutoImport({
+        dirs: [
+          '.vitepress/composables',
+        ],
+        imports: [
+          'vue',
+          'vitepress',
+          '@vueuse/core',
+        ],
+        dts: '.vitepress/auto-imports.d.ts',
       }),
     ],
   },
