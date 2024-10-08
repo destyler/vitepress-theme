@@ -73,14 +73,14 @@ importers:
   docs:
     dependencies:
       '@destyler/vitepress-theme':
-        specifier: ^0.1.1
-        version: 0.1.1(@unocss/reset@0.63.3)(destyler@0.0.4(vue@3.5.11(typescript@5.6.2)))(unocss-preset-animations@1.1.0(@unocss/preset-wind@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4))))(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4)))(vitepress@1.4.0(@algolia/client-search@5.7.0)(@types/node@22.7.4)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.6.2))(vue@3.5.11(typescript@5.6.2))
+        specifier: workspace:*
+        version: link:..
       '@unocss/reset':
         specifier: ^0.63.3
         version: 0.63.3
       destyler:
-        specifier: ^0.0.4
-        version: 0.0.4(vue@3.5.11(typescript@5.6.2))
+        specifier: ^0.0.5
+        version: 0.0.5(vue@3.5.11(typescript@5.6.2))
       unocss:
         specifier: ^0.63.3
         version: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4))
@@ -93,6 +93,10 @@ importers:
       vue:
         specifier: ^3.5.11
         version: 3.5.11(typescript@5.6.2)
+    devDependencies:
+      fast-deep-equal:
+        specifier: ^3.1.3
+        version: 3.1.3
 
 packages:
 
@@ -275,8 +279,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/arrow@0.0.5':
+    resolution: {integrity: sha512-1DAelbqxevRZwOVXeqletPNebq67gDdZHoQzIk1CsPV9WxRLM3lBOAENiMI+sbhG9El9VYl6rbmyJobrYKovtg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/aspect-radio@0.0.4':
     resolution: {integrity: sha512-M5F6XsOW3XPP7dDbvpHq8tboMYolJM9A+GU8R0tJLbsaZQs2JgrFyZ48VgT9LKxahsrINoa3B2a3aibaM8OOHQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/aspect-radio@0.0.5':
+    resolution: {integrity: sha512-sFehAtbmReHUjhePhJlCy2p268WCHzpUwKiJMqTflqwF3FR5yQBkzk/yhuubQVC9uYfqWCsuUJyrrFEpWXI5Dg==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -285,8 +299,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/back-top@0.0.5':
+    resolution: {integrity: sha512-p/MUUVbTVTOIoGbAtga8HkglU29fkJxZ1SgZgWqYFhK01rh8dIwdFUZlNxbmtIigatVuHROfI4/XKw9yCyrPIQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/breadcrumbs@0.0.4':
     resolution: {integrity: sha512-Ahv2M3fc/D0XKzNDPtdmIwaZ8BjFGNroePicePSWH9DGQnfc6V/ZnWdAQBI7fUHaolnIB+NXkyDkqPoBgK6m7w==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/breadcrumbs@0.0.5':
+    resolution: {integrity: sha512-6YMnSMUvUWW1kn/i1qH0TOB4Wy4t6DjEYxgdVR3KcO/dwPAJopaXRCph/AYlVRo1SrxzF5iknQ8208WbSpoADw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -295,8 +319,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/button@0.0.5':
+    resolution: {integrity: sha512-2W67SPPCUOaP8ri5lQwiVdHRp4YtFTSUdzduL+MOgh+nvTlgNs7mT1qFMDlkuKAg+D2CaKNT532PhzNceD5F/w==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/calendar@0.0.4':
     resolution: {integrity: sha512-gTy1aB9nP2T5fheFhdZjOSjpE9AGUi8342Rlr+Q7DdMuTNpziHOm3P1Gde3LbFdo8TTJ0O3DF8dHlwBWuKd2mw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/calendar@0.0.5':
+    resolution: {integrity: sha512-3NhsDiLbRVwoWCtE1uZ49wdd3D20HDzFpwFDYNg8WqreKPCdWfYdnYfujQtmgEK/JDbN4G8nIki4XNNhSgx60A==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -305,8 +339,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/checkbox@0.0.5':
+    resolution: {integrity: sha512-YmHivrxQw5czYOW/Jb+ZNQh3eK5Z9s0/QwWRAw5fu9HSQi+JjF19C3tLovToXrddUkWf6Gph0F9F/lbO+ykRiw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/collapse@0.0.4':
     resolution: {integrity: sha512-xAt895xDJU3T4rbAymrlYjPUpxyVCvqJrhGZICRIAIqxW0Cfw8JwzkI5LfgFgnB9QcqeFS6wbLa1Nkj2Lywo/w==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/collapse@0.0.5':
+    resolution: {integrity: sha512-rLur2OFetno+1QB8H0fWU0Jsna5DqLZTuzPKbQ6cvq/3n1xqQMKuSS/v88ZKWf6q3Tz3h+JV+ySGkB9AUZhOHQ==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -315,8 +359,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/collapsible@0.0.5':
+    resolution: {integrity: sha512-NDr879mV6QcuF5Ul4XxAOY4nD1eNL1fMWgRn8/lBUSV/uG7te3juTzLDARZItG24CH0xrZO4ZytRCC4oJ/0o4A==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/collection@0.0.4':
     resolution: {integrity: sha512-55MZWLMSrrZuIrgR+6536L0JzR8s5a4PdvNaUaH7ak5ufA2Yo5+zg64ChuOzr88Jac0IOHMohvRL0vPdMs0Bjw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/collection@0.0.5':
+    resolution: {integrity: sha512-V2o8k/+GXyYlww1wLXEOOyChc0L5aEr99dcKnF0G/Ly3LDD2OHhAvRYF2C5Dc/y5jk7/xF29yQjY3vWbcZuQrQ==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -325,8 +379,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/combobox@0.0.5':
+    resolution: {integrity: sha512-enNmSSjdlPqZ4ZLrgX3LEWDyMHy4P9nehpgMikD00WY7iyb3JZ1mrKl9QqY2D+1lIrrM5aaRObqUAnyK7CidRQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/composition@0.0.4':
     resolution: {integrity: sha512-BlmqCelmesHVM1862L6dmB0wxkPdfM9mBE+EAnUNiaBMBWlqoU8tROc3zN4sLNe/TA5/yVPGUQfH4YbZANhrnQ==}
+    peerDependencies:
+      vue: ^3.3.4
+
+  '@destyler/composition@0.0.5':
+    resolution: {integrity: sha512-A/urMDblTW3T4tgLZ/zTAPZ0A3iUd6sEboWDk5pV+VempCpYZCZCgjgeUjeCbt+mJ4iSAmRU7V2kH6eps5TJ5w==}
     peerDependencies:
       vue: ^3.3.4
 
@@ -335,8 +399,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/context-menu@0.0.5':
+    resolution: {integrity: sha512-iK2cHVyodlzyylEEgXv7fQzpvHkp1iTNYIoj93Q7ty8PAx9HnMiZb7k2kYxG+ODIUNyOXD673geY5phjiWOsbg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/countdown@0.0.4':
     resolution: {integrity: sha512-MpuWB9hA0yrZDiXLBFhAVkBTqS1bD5VgqSGU+0JSC29mSNXzIPTpdUGQnN7ZTL8e0lGr66D1uVl6otcv4iMLJA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/countdown@0.0.5':
+    resolution: {integrity: sha512-fUxv2TfCd1sGR5PuqpyIMnHnqCkkOYwwDC4ldz88wbm4brLo84Ya3wQ3x1WKSkRGgNM79VI7lnBpZmTT766HtA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -345,8 +419,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/dialog@0.0.5':
+    resolution: {integrity: sha512-OrqssMmJ79Y7TjbV/nipFh92A9Npbo6S8ptQoehcjCDwQKO25hbqOlx+qFRiGQm1HRNpDpe0cXeY5cx4j1VClA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/directives@0.0.4':
     resolution: {integrity: sha512-LpbugNyc7DslmgY/CpTliGUuqlAZIWiY1Rveb82kTxHNd2fx337bjVPwE4iHXN1dosT/hWm8ehf4HzODtIG1fA==}
+    peerDependencies:
+      vue: ^3.3.4
+
+  '@destyler/directives@0.0.5':
+    resolution: {integrity: sha512-6uE9tk3rh71zkvlW8ja1Hs4f+HflxTEURzrZGGK6qc3lxG5n84A42OwypyA+ipw6PRQiW+UhxttleCGylvkF9g==}
     peerDependencies:
       vue: ^3.3.4
 
@@ -355,8 +439,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/dismissable-layer@0.0.5':
+    resolution: {integrity: sha512-i9MMbJ+t064EylPSKSYbffqzLK47G/tEUP/zHpQxvdsQ4cewNRg37JAjRzhhawA315LcpQatPH76d8ItA+wAqA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/divider@0.0.4':
     resolution: {integrity: sha512-kfUx7imTLIRsAckuMl5Ts8AN8Pgjl07huED7/R/2E+rXX/tFt7jY02iKd2wX/Pa+L7Vk4TTrosTRvsjDxNSRQw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/divider@0.0.5':
+    resolution: {integrity: sha512-xafot5k23UFNk1+0vUTpNbofqM6tAD/U2+0/iu6dN3bXoqNRZSf0KL5NLRfVusTo8Vxq+pc61kZ5xIbi75ETzA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -365,8 +459,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/draggable@0.0.5':
+    resolution: {integrity: sha512-/qRLsuGg0WRfDkm6umDSvZUVRlAcGiMJ93KVt0+K6rfCqfRiNIWUtAlfQWMQeEtyeDR466zZ6R1TWKzr781ueQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/dropdown@0.0.4':
     resolution: {integrity: sha512-EnePO0uuuOB0CYqUytdFXS/Amu48KBzyJPce2XLh1T83NXikO/ACka0fsDfsjOGHMCoBB7zQijaUXccUqhFp0w==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/dropdown@0.0.5':
+    resolution: {integrity: sha512-2fN8Kqnzcjoa2pGN6yKowlopblu70y5EFiWCOPqg6AwhOgTsP73H9TEF49N4LaFE1MACK9zfu5BPjtkiaTxfrA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -375,8 +479,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/dynamic@0.0.5':
+    resolution: {integrity: sha512-koEgF5egT7uQMetVOguhG7Lq6T1Sb2lipWpRot9qD+meu4Nki97n/jX+lMn4kvt5P2eQvZtkF8DjB4Wd3BNHpw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/ellipsis@0.0.4':
     resolution: {integrity: sha512-XJdGyABKMlhfFJnoYM1SRn3L5F76gUQbMg0y7d7HeZ+r7829yDx9ZraG/bGoRNEV5Ni5tLxALOq/rI8nRGCikQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/ellipsis@0.0.5':
+    resolution: {integrity: sha512-+FPof8NPlmVGSO+evtK7Nh1nRfzw9qdsS23Mk4zuK+5o1p5EpRw0X7AbU9fPu/Phs/REfLXA6At3Y0hwQqgZYA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -385,8 +499,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/focus-scope@0.0.5':
+    resolution: {integrity: sha512-QHuAtTQ6TduFZCTU9Fp3SgM2qAOnKUgkjFSO6poyeQdUeJbEvPX4DX6+dZiDFCAQhZjPON87TqTMm4t4S3Nibg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/hover-card@0.0.4':
     resolution: {integrity: sha512-0/Jkuv3MAQ9JXo4mkIoXOdbtHFa8+YzXnLqaYkj/pg+Zv1coSu4thFnEoWvXr6w5mm0E0LAqv/vRIsSLf0j4ww==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/hover-card@0.0.5':
+    resolution: {integrity: sha512-ldkLzUNDhwbibvbqa39hlb0Xpjkkv+d2jXlgk9jv6pkVpCI9Q12NaupBuPW0EXvrUlpL8s6Mdy3ADe7SkEatbw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -395,8 +519,18 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
+  '@destyler/icon@0.0.5':
+    resolution: {integrity: sha512-MXStDL1A2n3lYvpHWSaksVWYNFvdoSxZM2AZxccSItT7sCBydvXCnZo7M7LPW27yX2tgb9Gji5yN9OA76ubeLw==}
+    peerDependencies:
+      vue: ^3.3.4
+
   '@destyler/image@0.0.4':
     resolution: {integrity: sha512-bwstedJl2h8sYWkY/87hDwtL8KYOJFFiDilLK2AZmF30VR16sNhJax/onQeYxmFFvVDcoumKLE+S7THCUfuVIQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/image@0.0.5':
+    resolution: {integrity: sha512-4eWcIavhs7pHUy9/GDiSi1F0+V2TJC/Ml+lVKbjx12vC0bkGsrKSS5jomMh9Ox5NEVrTkSVq9/wo/80588j7Xg==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -405,8 +539,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/info@0.0.5':
+    resolution: {integrity: sha512-l7uD8qwt9UeKM8bcJKbnsviV0CdHn2CTa58GK3BXr+aWm1P3Mxt6r9sqyCb9V1QiyPPfAH3Lok6ec48wIAe2Hg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/label@0.0.4':
     resolution: {integrity: sha512-S/OqmvY/YMgDs1IotcO/QYqkNee43Z75trelEMiEXXiU9YH0Dea2guXd7LIp5P7YzTBFXXAC5lbKO0dmxEyPhQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/label@0.0.5':
+    resolution: {integrity: sha512-wM6ONFw9EoLtnUcJwm3chCcw+TQtsjJMKAQER5OADe1y8WrNyYPxCUyS6DnB9hO24ZjrNmNogWWR430yizylmg==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -415,8 +559,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/link@0.0.5':
+    resolution: {integrity: sha512-I+3R9R1tjqKj3l0HxNd0UEZpmtqQ5wXZyWZ5JVPNoacgPC4hSb1pIt7I2Nx2pRlksUSxYuTQPTkpOpkjKPZFKQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/menu@0.0.4':
     resolution: {integrity: sha512-yQ0fnVwn7na6zYO92VzkXiBE+bhk6Tiyob8RsB6XZBCfLeCsa93L9R8wjM1S4HIa9vmXMwlveBH/4J+gsW2eXQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/menu@0.0.5':
+    resolution: {integrity: sha512-uPzRZNTL+/BCKZtsxZ0oFPEDhAKoL/l5cocxVlhhq4a83m0z6YRg7kFsUL1NEYvNkEURADhHXYYFX61Fzn9qYg==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -425,8 +579,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/menubar@0.0.5':
+    resolution: {integrity: sha512-1NaK7+9EZjOaALqyvkn6/+I6CrEE44RtwYBFFVO4cnwQvyh7108FeUIH5JAXdi3L8+Z5j/G8t4oP4kPEhwnW0g==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/modal@0.0.4':
     resolution: {integrity: sha512-2fTc8WnTIPpxpOVK++kZOjwt64mnDtjOdAJam0sl+NqhBkTPr98Vp+id3jxmll6RNuAJK1LsKUXPTVT2IxOmIg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/modal@0.0.5':
+    resolution: {integrity: sha512-BjoIPZCYx/jVb7qumd5WI968KjuXU6qiyC5yga5X9a3ISGRy707TxViv2J/mAT5V2I67v4aczlvij2UpGgtxIA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -435,8 +599,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/navigation@0.0.5':
+    resolution: {integrity: sha512-iaMJJIFHCXZwddCQVOhwLIpqu0OD/YVcnZoo9PlFymWOTOCM9Od7xb6PpyHTqyR3RGRcSjk1Yr5ZOllu+sqhTg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/online@0.0.4':
     resolution: {integrity: sha512-kwL1DlDXy0RLTW9kLyWjiEkUc9rmDbKEnVMVR1cbyQvG0+Wqmh+U+7RQPVQd3WNg1bK9pi+4tcvgOPn1gV0Oxg==}
+    peerDependencies:
+      vue: ^3.3.4
+
+  '@destyler/online@0.0.5':
+    resolution: {integrity: sha512-DGZCFgT2Q79nzo0MDM3OJLOEkPMI7bJKf4FukSZCENs6U056/A3FnXjVZ/5BWL+EuvY4eQofnd5Ua4950AmjrA==}
     peerDependencies:
       vue: ^3.3.4
 
@@ -445,8 +619,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/otp-input@0.0.5':
+    resolution: {integrity: sha512-D4AcYXP840R8VB1lLfn5nzLXerPPs1nQF87INdRPw1R8RO4ApImoWjCZzYQ8wVk/FFrJVi+yYu4GW4lMYBLa/A==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/pagination@0.0.4':
     resolution: {integrity: sha512-Lt3Iz7O6I1V1e56tB70/16ETwqsZNU4wIRnLsO75pdyWKIXf05GvlbA1P2ccZ3wIvWhORJa5zocuq36KizMeuA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/pagination@0.0.5':
+    resolution: {integrity: sha512-mPtmaCbN2cj8b4ZjS2mExornA791eeRalXYVGHF7H4SvolDOoua12aiv6SvE9cJJeAnfHrEu6pLBviGmdJBkIg==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -455,8 +639,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/popover@0.0.5':
+    resolution: {integrity: sha512-5kTXDpAxKMi7ptzbwlioqEC+Py4AyrvDYeFRGIYm1AsWaIBW/7poDs02nsFCZzBibDp6bnEh+DpDxZpsEITpdQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/popper@0.0.4':
     resolution: {integrity: sha512-1YnZjlzlnyZ4yOriozcZaK4I385DWD6bhGZ9lUUyr7AKLz8n1WJQVG3Ta5n9AE86ENw/n6O/8vTaOQEViq5t4A==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/popper@0.0.5':
+    resolution: {integrity: sha512-4/6KL6OFujNWIaXKJK2/omdQJsQEjCU4EZ8Nbt3IYBl/aMJMMJPqj/sQ9Nqqw7EL1Zn4+BDDk++7MzI5U5ODZw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -465,8 +659,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/presence@0.0.5':
+    resolution: {integrity: sha512-jYrIrLBkNliK/nTHyCOA8qcE3W63EPY/9sKK8cfWuqRYvHvHHtyRuR98f9yTI7S6+lkTSU66wkL5877XRNA/fQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/preview@0.0.4':
     resolution: {integrity: sha512-9n+PyQ63oi+LIvOl23gCh1SEq6C+3y3oPPaRyLsQymeV0Q4rgSvPW1JRdpSt/K+tFyVyaU322mzoNLIA6+YJ9g==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/preview@0.0.5':
+    resolution: {integrity: sha512-Icy7PWu7J+u+uvTVkndXgYG0ZkAVwdUav19Y8rxrWpAZUjJKLOad9G78fdAjw6Ly4dnd4x9P/rRFLoK3dvk8jQ==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -475,8 +679,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/primitive@0.0.5':
+    resolution: {integrity: sha512-AE7UktVlbP4Vwhjink/Di3g3WkIqTd2vArwqPZXWuf4ViYVoWBj/6BXW5+lLaGvunVwob4yv0bwzDVQpibckzA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/progress@0.0.4':
     resolution: {integrity: sha512-viEHWdMwbDsplMENn1vDpp4IVsqQ1BUNr0o5h44G30zSZK7MNj5Qq8i8mzuFwgb4MUZM1pNeTVAn0i7mSE1kAA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/progress@0.0.5':
+    resolution: {integrity: sha512-Jsa7ezsSodfEnSoPAyJ5fOg5bC4k5oeNH2bg23Rt9qARAvfA5QlI3RXGz5BuSDfsssZD90SkEdjtRSiLzu97tA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -485,8 +699,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/qr-code@0.0.5':
+    resolution: {integrity: sha512-WJ72kEr5sx8MgucTOCCPr+H2CTSgSzbm+kDphrMv6dycR5ApBNZi2Q/01owktnEnJtVzOqrHuhUMGxjfw5xSRw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/radio@0.0.4':
     resolution: {integrity: sha512-sn0yzXyXBXOuedoD0DR6gOmuFa/2anuaWZfwLPv6MkTwuGy6EQTvHbG1vbD4DP5TKYcSbCPHtnh9fM7u+LbxIg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/radio@0.0.5':
+    resolution: {integrity: sha512-sh6RDrcWBnQop36BJzTh24TDhUH2B+zNH5kwgYXuiZNOrJj1ze4COup3hpeJBSAKeL+0c6CLyT607XtyIVlpig==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -495,8 +719,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/range-calendar@0.0.5':
+    resolution: {integrity: sha512-UPxSfCSvU8VXl8L41kycgMe5MvzwbI2XkYV6fDEjvK5L1k7nqHl80CSDfD7bXkH8bwaGO0ZZYVRf48TQTZI8bw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/roving-focus@0.0.4':
     resolution: {integrity: sha512-ol2EiJ+UgcJALlQnAsHSEqBmRE4DVQzxU8ylmXSWi/cogZlzIrjWAW9BNcJOafYTzSaOSKshdpEIY7AzNGfKAQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/roving-focus@0.0.5':
+    resolution: {integrity: sha512-KADuso2wfxmXFk9Y7Gtgn02LizkH6TV1sZIKHz5+XKYyn7GMv1rIBFFS+SPDYQeIn3/Mai4iyoWgz4qn3KXkEQ==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -505,8 +739,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/scroll-area@0.0.5':
+    resolution: {integrity: sha512-eszc0iaN5JzvKX10hEzFnqo1/F4vizcRd6MP0e0pEPSsmT+L3u8+aMxXOCn5/1RaTi3bs6CFivA/xUmT69egSQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/select@0.0.4':
     resolution: {integrity: sha512-vQike+8Ak8PMBB2esGFJTEp3pv4C54E76GS6bBwlcIkwoxP/TK0FM2QjaO4dWE31l6bwbPyWTuFpyG4Eti7L2Q==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/select@0.0.5':
+    resolution: {integrity: sha512-OAxokJwkdTCDlsYzshVtuhqGv7//LbMQ7K7Okzw49naHV2c8D+CUxDx2YuB7E/QTeg14eWs6eTSJrbnAnVSQYw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -515,8 +759,18 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
+  '@destyler/shared@0.0.5':
+    resolution: {integrity: sha512-APpGv+oR+yeYdawhfd9jY/OwdwRMitm1H4pVKKZev9koHy2xGV7ovSVtSWHd7wcrIjMY+CK8n25SzWg7o/x2Og==}
+    peerDependencies:
+      vue: ^3.3.4
+
   '@destyler/slider@0.0.4':
     resolution: {integrity: sha512-T0L1vwHYuH4rYQiO1bseyHJCa5MAOSZLjStRhZaUKv8A1boIqbefv7ypFi4vr1lX4uIuIbg5Dld0loARSmvOyw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/slider@0.0.5':
+    resolution: {integrity: sha512-/wWocI4ClZqaCeF9jQDwIpWu54ywpjTY0zABomnC/4VmS+lBKtlS761XJNVd7B12mh4SLx53DHWrjst2bapywA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -525,8 +779,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/splitter@0.0.5':
+    resolution: {integrity: sha512-aP2SwZMmBk3/3320vR0+XIAb+vdNC5mKtw2+wGJe0F3/INxetJlBulLNtNMxjxuF7esu6ax3JQrHuWw+LH/VEQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/switch@0.0.4':
     resolution: {integrity: sha512-2fPkJtX8dRm07+WFsH1pJOuZHNh9yHYBHARW3Qk9hrqqC+nuB9BFj1TwYX0kmS/iqTtyvT5UsY8j7N0E8JXe1Q==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/switch@0.0.5':
+    resolution: {integrity: sha512-VPPqQeS8IJiRampdms1QbxJWvilA7w4H4cm3ITGBSP8mAU5X/ewWtR8V0NqXayOiJ/CcY2b5EWdgP9C+Z3YsPw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -535,8 +799,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/tabs@0.0.5':
+    resolution: {integrity: sha512-xQUmaTr2Iz0wOFrzLRu2qSeETKnlYhPNd/LFzC6JuXdyw4MaMIaEA9WjOTM5RM02ENhi3ZD8G2CrvGiL404cMg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/teleport@0.0.4':
     resolution: {integrity: sha512-l8oVqGhFqfneqt9yyhjnHH+O98s9PhbCMaecqpDdfCHXcRFBWgW9sO4EOiKRcuGInT4V5Z8cWBEXqhDvxSKwaA==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/teleport@0.0.5':
+    resolution: {integrity: sha512-mqc7q9KDGKW4nSDupjfJnktsHZ0wUf7u9PwEEXqdV9IG9D/p4UDPKfidUQPh+hZD6NuvlUGnObyG1UNBa3+jTw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -545,8 +819,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/toast@0.0.5':
+    resolution: {integrity: sha512-u2mxGznctsxLkEO7X/idCFtqHF1Wutz6Pmqew3TcP6RBBdW3DgNxUFWFu9wxOz5ctLB6YFmS7sv0JtT10RdBHg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/toggle@0.0.4':
     resolution: {integrity: sha512-RY9I4thUNyZTn1bZOeRT7gp4SYSLP7/LXxd3AvhukstUFiXviYnKgPg02eP7l8Diluu+SmcPrmTJ/ZH78bVMLg==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/toggle@0.0.5':
+    resolution: {integrity: sha512-BVKGGUqeObY3ZeEcHU2a30waMYaY+sDAcqDs8u2bmjysaXICzh1VvlVg/VcEuvYi5Q5XM0ymuoo2ZUSvzaScdA==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -555,8 +839,18 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
+  '@destyler/toolbar@0.0.5':
+    resolution: {integrity: sha512-B3zzuop23c6EPH3OWuKtJH+/Fz2qYQwBXOheN5F3szVDmJSOySYL1haOUh/3atFZxmhX0IGag5nD8P0+CtMLLQ==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
   '@destyler/tooltip@0.0.4':
     resolution: {integrity: sha512-tZxiz3LwZzx0o+HTYu9Cru/U9F91NkznZATwhAuKyjVJ2X4us/Dz1vu0Tx3FZKeIVw6weTpqzHdq8V6aw3C2Jw==}
+    peerDependencies:
+      vue: '>=3.4.21'
+
+  '@destyler/tooltip@0.0.5':
+    resolution: {integrity: sha512-xDNyBzWLG3srsFdWv6OdV8514btyyNKKxbhz3jXZCnInUOF7trCkiMjXEWw3BYEAglTq1mIJjRglxSmwYhZNEw==}
     peerDependencies:
       vue: '>=3.4.21'
 
@@ -565,14 +859,10 @@ packages:
     peerDependencies:
       vue: '>=3.4.21'
 
-  '@destyler/vitepress-theme@0.1.1':
-    resolution: {integrity: sha512-UHElL9f6PqUxtZ7p9EmBoOp17ThgQeuCiItuGk8Z4oBq21N2vzFnkK4L5a1whSmdmt1yrWhL/Z7k1PovRBQ/OA==}
+  '@destyler/visually-hidden@0.0.5':
+    resolution: {integrity: sha512-gnlFV/SLnUcNwoseyKePd/v/JrowPUnzHM9t8rpGNRzSd/6gNO+sdf+aTur7HnMvrkDjaKKa3HwmpFrptN98Nw==}
     peerDependencies:
-      '@unocss/reset': '>=0.62.4'
-      destyler: '>=0.0.4'
-      unocss: '>=0.62.4'
-      unocss-preset-animations: '>=1.1.0'
-      vitepress: '>=1.3.4'
+      vue: '>=3.4.21'
 
   '@docsearch/css@3.6.2':
     resolution: {integrity: sha512-vKNZepO2j7MrYBTZIGXvlUOIR+v9KRf70FApRgovWrj3GTs1EITz/Xb0AOlm1xsQBp16clVZj1SY/qaOJbQtZw==}
@@ -1767,6 +2057,11 @@ packages:
 
   destyler@0.0.4:
     resolution: {integrity: sha512-/4pyjC5R4zL0vnZ8oXtN65/KRQOzgEns2/jqKbx3lwd+Kx3AYERP9V2KNwSrjSqCwAu+0Eit3Fqqvh8YHpCsqg==}
+    peerDependencies:
+      vue: ^3.3.4
+
+  destyler@0.0.5:
+    resolution: {integrity: sha512-2RAhU1lcJLx+wB2VkIzSrStfmriyD54BVECtNLVRtMSEi2PTBa7oA9w4EUe2M5iU4lkS8bZjBy1/ee5K3Lg1Gw==}
     peerDependencies:
       vue: ^3.3.4
 
@@ -3463,6 +3758,15 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/arrow@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/aspect-radio@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3472,11 +3776,29 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/aspect-radio@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/back-top@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/back-top@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3491,6 +3813,16 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/breadcrumbs@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/button@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3500,11 +3832,30 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/button@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/calendar@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      '@internationalized/date': 3.5.6
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/calendar@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       '@internationalized/date': 3.5.6
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
@@ -3521,6 +3872,17 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/checkbox@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/collapse@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/collapsible': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3528,6 +3890,17 @@ snapshots:
       '@destyler/directives': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/collapse@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/collapsible': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3543,11 +3916,31 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/collapsible@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/collection@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/collection@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3569,9 +3962,37 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/combobox@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/collection': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/composition@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      '@internationalized/date': 3.5.6
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/shared': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      aria-hidden: 1.2.4
+      defu: 6.1.4
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/composition@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       '@internationalized/date': 3.5.6
       '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
       '@vueuse/shared': 10.11.1(vue@3.5.11(typescript@5.6.2))
@@ -3591,10 +4012,28 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/context-menu@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/menu': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/countdown@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/countdown@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3613,9 +4052,29 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/dialog@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/directives@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      scule: 1.3.0
+      vue: 3.5.11(typescript@5.6.2)
+
+  '@destyler/directives@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       scule: 1.3.0
       vue: 3.5.11(typescript@5.6.2)
 
@@ -3629,10 +4088,28 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/dismissable-layer@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/divider@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/divider@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3642,6 +4119,15 @@ snapshots:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/draggable@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3657,6 +4143,17 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/dropdown@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/menu': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/dynamic@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/collection': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3665,6 +4162,19 @@ snapshots:
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/visually-hidden': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/dynamic@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/collection': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
       '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
@@ -3685,11 +4195,35 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/ellipsis@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/tooltip': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/focus-scope@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/focus-scope@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3707,9 +4241,28 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/hover-card@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/icon@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      '@iconify/vue': 4.1.2(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+
+  '@destyler/icon@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       '@iconify/vue': 4.1.2(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
 
@@ -3718,6 +4271,15 @@ snapshots:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/image@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3731,6 +4293,15 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/info@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/label@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3740,11 +4311,29 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/label@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/link@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/link@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3765,6 +4354,22 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/menu@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/menubar@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3773,6 +4378,18 @@ snapshots:
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/roving-focus': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/menubar@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/menu': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3792,6 +4409,21 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/modal@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dialog': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/navigation@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3806,10 +4438,32 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/navigation@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/online@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/online@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3824,11 +4478,30 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/otp-input@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/pagination@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/pagination@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3848,6 +4521,21 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/popover@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/popper@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/arrow': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -3859,10 +4547,29 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/popper@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/arrow': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@floating-ui/vue': 1.1.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/presence@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/presence@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3878,10 +4585,29 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/preview@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/primitive@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/primitive@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3895,11 +4621,29 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/progress@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/qr-code@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/qr-code@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3917,12 +4661,36 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/radio@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/range-calendar@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/calendar': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      '@internationalized/date': 3.5.6
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/range-calendar@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/calendar': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       '@internationalized/date': 3.5.6
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
@@ -3937,12 +4705,31 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/roving-focus@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/scroll-area@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/presence': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/scroll-area@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3963,7 +4750,28 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/select@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/shared@0.0.4(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@internationalized/date': 3.5.6
+      vue: 3.5.11(typescript@5.6.2)
+
+  '@destyler/shared@0.0.5(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@internationalized/date': 3.5.6
       vue: 3.5.11(typescript@5.6.2)
@@ -3974,6 +4782,16 @@ snapshots:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/slider@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/collection': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3989,12 +4807,33 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/splitter@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      nanoid: 5.0.7
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/switch@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/directives': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/switch@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4011,10 +4850,30 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/tabs@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/directives': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/teleport@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/teleport@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4034,12 +4893,37 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/toast@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/toggle@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/composition': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/roving-focus': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/toggle@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4052,6 +4936,18 @@ snapshots:
       '@destyler/roving-focus': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/shared': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/toggle': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@destyler/toolbar@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/divider': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/toggle': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4070,6 +4966,20 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
+  '@destyler/tooltip@0.0.5(vue@3.5.11(typescript@5.6.2))':
+    dependencies:
+      '@destyler/composition': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@vueuse/core': 10.11.1(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
   '@destyler/visually-hidden@0.0.4(vue@3.5.11(typescript@5.6.2))':
     dependencies:
       '@destyler/primitive': 0.0.4(vue@3.5.11(typescript@5.6.2))
@@ -4078,20 +4988,13 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
-  '@destyler/vitepress-theme@0.1.1(@unocss/reset@0.63.3)(destyler@0.0.4(vue@3.5.11(typescript@5.6.2)))(unocss-preset-animations@1.1.0(@unocss/preset-wind@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4))))(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4)))(vitepress@1.4.0(@algolia/client-search@5.7.0)(@types/node@22.7.4)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.6.2))(vue@3.5.11(typescript@5.6.2))':
+  '@destyler/visually-hidden@0.0.5(vue@3.5.11(typescript@5.6.2))':
     dependencies:
-      '@unocss/reset': 0.63.3
-      '@vueuse/core': 11.1.0(vue@3.5.11(typescript@5.6.2))
-      body-scroll-lock: 4.0.0-beta.0
-      destyler: 0.0.4(vue@3.5.11(typescript@5.6.2))
-      normalize.css: 8.0.1
-      tiny-decode: 0.1.3
-      unocss: 0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4))
-      unocss-preset-animations: 1.1.0(@unocss/preset-wind@0.63.3)(unocss@0.63.3(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.4)))
-      vitepress: 1.4.0(@algolia/client-search@5.7.0)(@types/node@22.7.4)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.6.2)
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/shared': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'
-      - vue
 
   '@docsearch/css@3.6.2': {}
 
@@ -5342,6 +6245,68 @@ snapshots:
       '@destyler/toolbar': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/tooltip': 0.0.4(vue@3.5.11(typescript@5.6.2))
       '@destyler/visually-hidden': 0.0.4(vue@3.5.11(typescript@5.6.2))
+      vue: 3.5.11(typescript@5.6.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  destyler@0.0.5(vue@3.5.11(typescript@5.6.2)):
+    dependencies:
+      '@destyler/arrow': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/aspect-radio': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/back-top': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/breadcrumbs': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/button': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/calendar': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/checkbox': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/collapse': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/collapsible': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/collection': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/combobox': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/context-menu': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/countdown': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dialog': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dismissable-layer': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/divider': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/draggable': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dropdown': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/dynamic': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/ellipsis': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/focus-scope': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/hover-card': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/icon': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/image': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/info': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/label': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/link': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/menu': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/menubar': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/modal': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/navigation': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/online': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/otp-input': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/pagination': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popover': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/popper': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/presence': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/preview': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/primitive': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/progress': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/qr-code': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/radio': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/range-calendar': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/roving-focus': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/scroll-area': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/select': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/slider': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/splitter': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/switch': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/tabs': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/teleport': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/toast': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/toggle': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/toolbar': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/tooltip': 0.0.5(vue@3.5.11(typescript@5.6.2))
+      '@destyler/visually-hidden': 0.0.5(vue@3.5.11(typescript@5.6.2))
       vue: 3.5.11(typescript@5.6.2)
     transitivePeerDependencies:
       - '@vue/composition-api'

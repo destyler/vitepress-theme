@@ -1,5 +1,4 @@
 import type { Config as ThemeConfig } from '@destyler/vitepress-theme'
-import path from 'node:path'
 import baseConfig from '@destyler/vitepress-theme/config'
 import { builtinColors, presetDestyler } from '@destyler/vitepress-theme/unocss'
 import { presetUno } from 'unocss'

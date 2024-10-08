@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import VPApp from './components/VPApp.vue'
 import { withConfigProvider } from './composables/config'
+import { builtinColors, builtinRadiuses, presetDestyler } from './unocss/index.js'
 
 import './styles/variable.css'
 import './styles/main.css'
@@ -11,6 +12,9 @@ const VPTheme: Theme = {
 }
 
 export {
+  builtinColors,
+  builtinRadiuses,
+  presetDestyler,
   VPTheme,
 }
 
