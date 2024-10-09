@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy
         run: |
-          curl --location 'https://dash.zeabur.com/projects/66d7177c6552069ec1cfa5e7/services/6705458ffeaa349466328141/deploy' \
+          curl --location 'https://gateway.zeabur.com/projects/66d7177c6552069ec1cfa5e7/services/670614505aa99002bd6de73a/deploy' \
           --header 'Content-Type: multipart/form-data' \
           --header 'Authorization: Bearer ${{secrets.ZEABUR_TOKEN}}' \
           --form 'code=@"/home/runner/work/vitepress-theme/vitepress-theme/docs/.vitepress/zip/dist.zip"' \
