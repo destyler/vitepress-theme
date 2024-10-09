@@ -8,7 +8,7 @@ This repo can be developed on its own since it is a self-contained VitePress the
 
 ```bash
 pnpm install
-pnpm dev
+pnpm docs:dev
 ```
 
 ### Available Scripts
@@ -17,7 +17,7 @@ Here is the list of available scripts that can be used during the development.
 
 ```bash
 # Boot local dev server.
-$ pnpm dev
+$ pnpm docs:dev
 
 # Build demo, then serve locally. This is for testing
 # production build in the local environment.

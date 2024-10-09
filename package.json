@@ -34,6 +34,7 @@
     "docs:dev": "pnpm -C docs run dev",
     "docs:build": "pnpm -C docs run build",
     "docs:preview": "pnpm -C docs run preview",
+    "serve": "pnpm run docs:build && pnpm run docs:preview",
     "docs:zip": "tsx scripts/docs/zip.ts",
     "release": "bumpp && pnpm -r publish --access public"
   },
