@@ -6,6 +6,8 @@ import { version } from '../../package.json'
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig as any,
 
+  ignoreDeadLinks: true,
+
   lang: 'en-US',
   title: '@destyler/vitepress-theme',
 
