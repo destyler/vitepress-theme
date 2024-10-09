@@ -4,7 +4,8 @@
   "private": "true",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build"
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
     "@destyler/vitepress-theme": "workspace:*",

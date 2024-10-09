@@ -1,0 +1,41 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Install
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build
+        run: pnpm run docs:build
+
+      - name: Zip
+        run: pnpm run docs:zip
+
+      - name: Deploy
+        run: |
+          curl --location 'https://dash.zeabur.com/projects/66d7177c6552069ec1cfa5e7/services/6705458ffeaa349466328141/deploy' \
+          --header 'Content-Type: multipart/form-data' \
+          --header 'Authorization: Bearer ${{secrets.ZEABUR_TOKEN}}' \
+          --form 'code=@"/home/runner/work/destyler/vitepress-theme/docs/.vitepress/zip/dist.zip"' \
+          --form 'environment="${{secrets.ENVIRONMENT}}"'
