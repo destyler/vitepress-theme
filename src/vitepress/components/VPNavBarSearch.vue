@@ -185,7 +185,7 @@ watch(openStatus, (value) => {
 
 .doc-search-button .doc-search-search-icon {
   --at-apply:
-    text-foreground
+    text-muted-foreground
     w-4.5
     h-4.5
     relative
@@ -199,7 +199,7 @@ watch(openStatus, (value) => {
 }
 
 .doc-search-button:hover .doc-search-search-icon {
-  --at-apply: text-foreground/60;
+  --at-apply: text-foreground;
 }
 
 .doc-search-button-placeholder {
